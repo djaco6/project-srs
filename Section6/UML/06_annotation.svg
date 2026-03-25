@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 906" width="400" height="906">
+  <defs>
+    <style>
+      .class-name { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 15px; font-weight: bold; fill: #333; }
+      .attr { font-family: 'SF Mono', 'Menlo', 'Consolas', monospace; font-size: 13px; fill: #333; }
+      .section-label { font-family: 'SF Mono', 'Menlo', 'Consolas', monospace; font-size: 12px; font-style: italic; fill: #1565C0; }
+    </style>
+  </defs>
+
+  <!-- Box -->
+  <rect x="0.5" y="0.5" width="399" height="905" rx="4" ry="4" fill="white" stroke="#333" stroke-width="1"/>
+
+  <!-- Header background -->
+  <rect x="0.5" y="0.5" width="399" height="38" rx="4" ry="4" fill="#E3F2FD" stroke="none"/>
+  <rect x="0.5" y="24" width="399" height="15" fill="#E3F2FD" stroke="none"/>
+  <line x1="0.5" y1="38.5" x2="399.5" y2="38.5" stroke="#333" stroke-width="1"/>
+
+  <!-- Class name -->
+  <text x="200" y="25" text-anchor="middle" class="class-name">Annotation (CL06)</text>
+
+  <!-- === Top attributes === -->
+  <text x="16" y="62" class="attr">id: bigint PK</text>
+  <text x="16" y="84" class="attr">document_id: uuid FK &#x2192; Document</text>
+  <text x="16" y="106" class="attr">page_number: integer</text>
+  <text x="16" y="128" class="attr">annotation_type: string</text>
+  <text x="16" y="150" class="attr">entity_id: bigint FK &#x2192; Entity</text>
+  <text x="16" y="172" class="attr">entity_a_id: bigint FK &#x2192; Entity</text>
+  <text x="16" y="194" class="attr">entity_b_id: bigint FK &#x2192; Entity</text>
+
+  <!-- Divider + Population Data section label -->
+  <line x1="0.5" y1="206.5" x2="399.5" y2="206.5" stroke="#333" stroke-width="0.5"/>
+  <rect x="0.5" y="207" width="399" height="24" fill="#F5F5F5" stroke="none"/>
+  <text x="16" y="224" class="section-label">Population Data</text>
+  <line x1="0.5" y1="231.5" x2="399.5" y2="231.5" stroke="#333" stroke-width="0.5"/>
+
+  <!-- Population Data attributes -->
+  <text x="16" y="252" class="attr">city_name: string</text>
+  <text x="16" y="274" class="attr">year_queried: integer</text>
+  <text x="16" y="296" class="attr">city_population: bigint</text>
+  <text x="16" y="318" class="attr">city_pop_interpolated: boolean</text>
+  <text x="16" y="340" class="attr">country_name: string</text>
+  <text x="16" y="362" class="attr">country_population: bigint</text>
+  <text x="16" y="384" class="attr">continent_name: string</text>
+  <text x="16" y="406" class="attr">continent_population: bigint</text>
+  <text x="16" y="428" class="attr">gdp_per_capita: float</text>
+
+  <!-- Divider + Travel Data section label -->
+  <line x1="0.5" y1="440.5" x2="399.5" y2="440.5" stroke="#333" stroke-width="0.5"/>
+  <rect x="0.5" y="441" width="399" height="24" fill="#F5F5F5" stroke="none"/>
+  <text x="16" y="458" class="section-label">Travel Data</text>
+  <line x1="0.5" y1="465.5" x2="399.5" y2="465.5" stroke="#333" stroke-width="0.5"/>
+
+  <!-- Travel Data attributes -->
+  <text x="16" y="486" class="attr">distance_miles: float</text>
+  <text x="16" y="508" class="attr">distance_adjusted: float</text>
+  <text x="16" y="530" class="attr">terrain_multiplier: float</text>
+  <text x="16" y="552" class="attr">foot_days_low: float</text>
+  <text x="16" y="574" class="attr">foot_days_high: float</text>
+  <text x="16" y="596" class="attr">horse_days_low: float</text>
+  <text x="16" y="618" class="attr">horse_days_high: float</text>
+
+  <!-- Divider + Computation Audit section label -->
+  <line x1="0.5" y1="630.5" x2="399.5" y2="630.5" stroke="#333" stroke-width="0.5"/>
+  <rect x="0.5" y="631" width="399" height="24" fill="#F5F5F5" stroke="none"/>
+  <text x="16" y="648" class="section-label">Computation Audit</text>
+  <line x1="0.5" y1="655.5" x2="399.5" y2="655.5" stroke="#333" stroke-width="0.5"/>
+
+  <!-- Computation Audit attributes -->
+  <text x="16" y="676" class="attr">computed_at: datetime</text>
+  <text x="16" y="698" class="attr">computation_duration_ms: integer</text>
+  <text x="16" y="720" class="attr">data_sources_used: text[]</text>
+  <text x="16" y="742" class="attr">city_pop_bracketing_years: integer[]</text>
+  <text x="16" y="764" class="attr">interpolation_method: string</text>
+  <text x="16" y="786" class="attr">country_pop_source: string</text>
+  <text x="16" y="808" class="attr">continent_pop_source: string</text>
+  <text x="16" y="830" class="attr">stale: boolean</text>
+
+  <!-- Divider before timestamps -->
+  <line x1="0.5" y1="842.5" x2="399.5" y2="842.5" stroke="#333" stroke-width="0.5"/>
+
+  <!-- Timestamp attributes -->
+  <text x="16" y="866" class="attr">created_at: datetime</text>
+  <text x="16" y="888" class="attr">updated_at: datetime</text>
+</svg>

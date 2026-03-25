@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 680" width="420" height="680">
+  <defs>
+    <style>
+      .class-name { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 15px; font-weight: bold; fill: #333; }
+      .attr { font-family: 'SF Mono', 'Menlo', 'Consolas', monospace; font-size: 13px; fill: #333; }
+      .section-label { font-family: 'SF Mono', 'Menlo', 'Consolas', monospace; font-size: 12px; font-style: italic; fill: #1565C0; }
+    </style>
+  </defs>
+
+  <!-- Box -->
+  <rect x="0.5" y="0.5" width="419" height="679" rx="4" ry="4" fill="white" stroke="#333" stroke-width="1"/>
+
+  <!-- Header background -->
+  <rect x="0.5" y="0.5" width="419" height="38" rx="4" ry="4" fill="#E3F2FD" stroke="none"/>
+  <rect x="0.5" y="24" width="419" height="15" fill="#E3F2FD" stroke="none"/>
+  <line x1="0.5" y1="38.5" x2="419.5" y2="38.5" stroke="#333" stroke-width="1"/>
+
+  <!-- Class name -->
+  <text x="210" y="25" text-anchor="middle" class="class-name">Entity (CL05)</text>
+
+  <!-- === Top attributes === -->
+  <text x="16" y="62" class="attr">id: bigint PK</text>
+  <text x="16" y="84" class="attr">document_id: uuid FK &#x2192; Document</text>
+
+  <!-- Divider + SPAN FIELDS section label -->
+  <line x1="0.5" y1="94.5" x2="419.5" y2="94.5" stroke="#333" stroke-width="0.5"/>
+  <rect x="0.5" y="95" width="419" height="24" fill="#F5F5F5" stroke="none"/>
+  <text x="16" y="112" class="section-label">SPAN FIELDS (future: TextSpan)</text>
+  <line x1="0.5" y1="119.5" x2="419.5" y2="119.5" stroke="#333" stroke-width="0.5"/>
+
+  <!-- Span attributes -->
+  <text x="16" y="140" class="attr">page_number: integer</text>
+  <text x="16" y="162" class="attr">entity_type: string</text>
+  <text x="16" y="184" class="attr">raw_text: string</text>
+  <text x="16" y="206" class="attr">char_offset_start: integer</text>
+  <text x="16" y="228" class="attr">char_offset_end: integer</text>
+
+  <!-- Divider + RESOLUTION FIELDS section label -->
+  <line x1="0.5" y1="238.5" x2="419.5" y2="238.5" stroke="#333" stroke-width="0.5"/>
+  <rect x="0.5" y="239" width="419" height="24" fill="#F5F5F5" stroke="none"/>
+  <text x="16" y="256" class="section-label">RESOLUTION FIELDS (future: EntityResolution)</text>
+  <line x1="0.5" y1="263.5" x2="419.5" y2="263.5" stroke="#333" stroke-width="0.5"/>
+
+  <!-- Resolution attributes -->
+  <text x="16" y="284" class="attr">resolved_city_id: string</text>
+  <text x="16" y="306" class="attr">resolved_year: integer</text>
+  <text x="16" y="328" class="attr">alternative_years: integer[]</text>
+  <text x="16" y="350" class="attr">date_precision: string</text>
+  <text x="16" y="372" class="attr">resolved_country: string</text>
+  <text x="16" y="394" class="attr">resolved_lat: float</text>
+  <text x="16" y="416" class="attr">resolved_lon: float</text>
+
+  <!-- Divider + EXTRACTION AUDIT section label -->
+  <line x1="0.5" y1="426.5" x2="419.5" y2="426.5" stroke="#333" stroke-width="0.5"/>
+  <rect x="0.5" y="427" width="419" height="24" fill="#F5F5F5" stroke="none"/>
+  <text x="16" y="444" class="section-label">EXTRACTION AUDIT</text>
+  <line x1="0.5" y1="451.5" x2="419.5" y2="451.5" stroke="#333" stroke-width="0.5"/>
+
+  <!-- Extraction audit attributes -->
+  <text x="16" y="472" class="attr">extraction_method: string</text>
+  <text x="16" y="494" class="attr">match_type: string</text>
+  <text x="16" y="516" class="attr">confidence_score: float</text>
+  <text x="16" y="538" class="attr">candidate_count: integer</text>
+  <text x="16" y="560" class="attr">resolution_notes: text</text>
+  <text x="16" y="582" class="attr">resolved_at: datetime</text>
+
+  <!-- Divider before timestamps -->
+  <line x1="0.5" y1="594.5" x2="419.5" y2="594.5" stroke="#333" stroke-width="0.5"/>
+
+  <!-- Timestamp attributes -->
+  <text x="16" y="618" class="attr">created_at: datetime</text>
+  <text x="16" y="640" class="attr">updated_at: datetime</text>
+</svg>

@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1400 2792"
+     width="1400" height="2792">
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1400" height="2792" fill="#FAFAFA"/>
+
+  <!-- Title -->
+  <text x="700.0" y="38" text-anchor="middle"
+        font-family="sans-serif" font-size="20" font-weight="bold" fill="#1a237e">
+    Alexandria - UML Class Diagram
+  </text>
+
+  <!-- Marker definitions -->
+  <defs>
+    <marker id="diamond-filled" viewBox="0 0 12 8" refX="0" refY="4" markerWidth="12" markerHeight="8" orient="auto"><polygon points="0,4 6,0 12,4 6,8" fill="#333" stroke="#333" stroke-width="0.8"/></marker>
+    <marker id="diamond-open" viewBox="0 0 12 8" refX="0" refY="4" markerWidth="12" markerHeight="8" orient="auto"><polygon points="0,4 6,0 12,4 6,8" fill="white" stroke="#333" stroke-width="0.8"/></marker>
+    <marker id="arrow-solid" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><polyline points="0,0 10,5 0,10" fill="none" stroke="#333" stroke-width="1.5"/></marker>
+    <marker id="arrow-dashed" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto"><polyline points="0,0 10,5 0,10" fill="none" stroke="#666" stroke-width="1.5"/></marker>
+  </defs>
+
+  <!-- Relationship lines (drawn first so boxes render on top) -->
+  <g id="relationships">
+    <line x1="436" y1="123.68" x2="550" y2="116.80000000000001" stroke="#333" stroke-width="2" marker-start="url(#diamond-filled)"/>
+    <text x="444" y="115.68" font-size="13" font-family="sans-serif" fill="#333" font-weight="bold">1</text>
+    <text x="530" y="108.80000000000001" font-size="13" font-family="sans-serif" fill="#333" font-weight="bold">1</text>
+    <line x1="165.8" y1="626" x2="176.0" y2="686" stroke="#333" stroke-width="2" marker-start="url(#diamond-filled)"/>
+    <text x="173.8" y="644" font-size="13" font-family="sans-serif" fill="#333" font-weight="bold">1</text>
+    <text x="184.0" y="680" font-size="13" font-family="sans-serif" fill="#333" font-weight="bold">*</text>
+    <line x1="470" y1="726.8" x2="550" y2="726.0" stroke="#333" stroke-width="2" marker-start="url(#diamond-filled)"/>
+    <text x="478" y="718.8" font-size="13" font-family="sans-serif" fill="#333" font-weight="bold">1</text>
+    <text x="530" y="718.0" font-size="13" font-family="sans-serif" fill="#333" font-weight="bold">*</text>
+    <line x1="155.0" y1="1366" x2="155.0" y2="1426" stroke="#333" stroke-width="2" marker-start="url(#diamond-filled)"/>
+    <text x="163.0" y="1384" font-size="13" font-family="sans-serif" fill="#333" font-weight="bold">1</text>
+    <text x="163.0" y="1420" font-size="13" font-family="sans-serif" fill="#333" font-weight="bold">*</text>
+    <path d="M 365.0,1366 L 365.0,1396.0 L 750.0,1396.0 L 750.0,1426" fill="none" stroke="#333" stroke-width="2" marker-start="url(#diamond-filled)"/>
+    <text x="373.0" y="1384" font-size="13" font-family="sans-serif" fill="#333" font-weight="bold">1</text>
+    <text x="758.0" y="1420" font-size="13" font-family="sans-serif" fill="#333" font-weight="bold">*</text>
+    <line x1="470" y1="1480.4" x2="550" y2="1462.24" stroke="#333" stroke-width="1.5" marker-end="url(#arrow-solid)"/>
+    <text x="478" y="1472.4" font-size="13" font-family="sans-serif" fill="#333" font-weight="bold">1</text>
+    <text x="530" y="1454.24" font-size="13" font-family="sans-serif" fill="#333" font-weight="bold">*</text>
+    <line x1="176.0" y1="2106" x2="230.0" y2="2392" stroke="#333" stroke-width="1.5" marker-end="url(#arrow-solid)"/>
+    <text x="184.0" y="2124" font-size="13" font-family="sans-serif" fill="#333" font-weight="bold">*</text>
+    <text x="238.0" y="2386" font-size="13" font-family="sans-serif" fill="#333" font-weight="bold">0..1</text>
+    <line x1="690.0" y1="2332" x2="770.0" y2="2392" stroke="#666" stroke-width="1.5" stroke-dasharray="8,4" marker-end="url(#arrow-dashed)"/>
+    <text x="730.0" y="2354.0" font-size="12" font-family="sans-serif" fill="#666" font-style="italic" text-anchor="middle">&lt;&lt;lookup&gt;&gt;</text>
+    <path d="M 850.0,2332 L 850.0,2362.0 L 1210.0,2362.0 L 1210.0,2392" fill="none" stroke="#666" stroke-width="1.5" stroke-dasharray="8,4" marker-end="url(#arrow-dashed)"/>
+    <text x="1030.0" y="2354.0" font-size="12" font-family="sans-serif" fill="#666" font-style="italic" text-anchor="middle">&lt;&lt;lookup&gt;&gt;</text>
+  </g>
+
+  <!-- Class boxes -->
+  <!-- 01_user.svg -->
+  <g transform="translate(50, 80)">
+    <defs>
+    <style>
+      .c0_class-name { font: bold 15px sans-serif; fill: #1a237e; }
+      .c0_section-label { font: bold 12px sans-serif; fill: #555; }
+      .c0_attr { font: 13px monospace; fill: #333; }
+    </style>
+  </defs>
+
+  <!-- Outer box -->
+  <rect x="0.5" y="0.5" width="385" height="545" rx="4" ry="4" fill="white" stroke="#333" stroke-width="1.2"/>
+
+  <!-- Header background -->
+  <rect x="1" y="1" width="384" height="39" rx="4" ry="4" fill="#E3F2FD" stroke="none"/>
+  <rect x="1" y="20" width="384" height="20" fill="#E3F2FD" stroke="none"/>
+  <line x1="0.5" y1="40.5" x2="385.5" y2="40.5" stroke="#333" stroke-width="1"/>
+
+  <!-- Header text -->
+  <text x="193" y="27" text-anchor="middle" class="c0_class-name">User (CL01)</text>
+
+  <!-- ─── Devise Auth ─── -->
+  <text x="193" y="60" text-anchor="middle" class="c0_section-label">--- Devise Auth ---</text>
+  <line x1="0.5" y1="68" x2="385.5" y2="68" stroke="#ccc" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+  <text x="16" y="88" class="c0_attr">id: bigint PK</text>
+  <text x="16" y="110" class="c0_attr">email: string</text>
+  <text x="16" y="132" class="c0_attr">encrypted_password: string</text>
+  <text x="16" y="154" class="c0_attr">reset_password_token: string</text>
+  <text x="16" y="176" class="c0_attr">reset_password_sent_at: datetime</text>
+  <text x="16" y="198" class="c0_attr">remember_created_at: datetime</text>
+
+  <!-- ─── Trackable ─── -->
+  <line x1="0.5" y1="212" x2="385.5" y2="212" stroke="#333" stroke-width="0.8"/>
+  <text x="193" y="232" text-anchor="middle" class="c0_section-label">--- Trackable ---</text>
+  <line x1="0.5" y1="240" x2="385.5" y2="240" stroke="#ccc" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+  <text x="16" y="260" class="c0_attr">sign_in_count: integer</text>
+  <text x="16" y="282" class="c0_attr">current_sign_in_at: datetime</text>
+  <text x="16" y="304" class="c0_attr">last_sign_in_at: datetime</text>
+  <text x="16" y="326" class="c0_attr">current_sign_in_ip: inet</text>
+  <text x="16" y="348" class="c0_attr">last_sign_in_ip: inet</text>
+
+  <!-- ─── Application ─── -->
+  <line x1="0.5" y1="362" x2="385.5" y2="362" stroke="#333" stroke-width="0.8"/>
+  <text x="193" y="382" text-anchor="middle" class="c0_section-label">--- Application ---</text>
+  <line x1="0.5" y1="390" x2="385.5" y2="390" stroke="#ccc" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+  <text x="16" y="410" class="c0_attr">role: string</text>
+  <text x="16" y="432" class="c0_attr">created_at: datetime</text>
+  <text x="16" y="454" class="c0_attr">updated_at: datetime</text>
+
+  <!-- ─── Methods ─── -->
+  <line x1="0.5" y1="468" x2="385.5" y2="468" stroke="#333" stroke-width="0.8"/>
+  <text x="193" y="488" text-anchor="middle" class="c0_section-label">--- Methods ---</text>
+  <line x1="0.5" y1="496" x2="385.5" y2="496" stroke="#ccc" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+  <text x="16" y="516" class="c0_attr">+ authenticate()</text>
+  <text x="16" y="538" class="c0_attr">+ admin?()</text>
+  </g>
+  <!-- 02_user_profile.svg -->
+  <g transform="translate(550, 80)">
+    <defs>
+    <style>
+      .c1_class-name { font: bold 15px sans-serif; fill: #1a237e; }
+      .c1_section-label { font: bold 12px sans-serif; fill: #555; }
+      .c1_attr { font: 13px monospace; fill: #333; }
+    </style>
+  </defs>
+
+  <!-- Outer box -->
+  <rect x="0.5" y="0.5" width="399" height="459" rx="4" ry="4" fill="white" stroke="#333" stroke-width="1.2"/>
+
+  <!-- Header background -->
+  <rect x="1" y="1" width="398" height="39" rx="4" ry="4" fill="#E3F2FD" stroke="none"/>
+  <rect x="1" y="20" width="398" height="20" fill="#E3F2FD" stroke="none"/>
+  <line x1="0.5" y1="40.5" x2="399.5" y2="40.5" stroke="#333" stroke-width="1"/>
+
+  <!-- Header text -->
+  <text x="200" y="27" text-anchor="middle" class="c1_class-name">UserProfile (CL02)</text>
+
+  <!-- ─── first divider ─── -->
+  <line x1="0.5" y1="48" x2="399.5" y2="48" stroke="#ccc" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+  <text x="16" y="68" class="c1_attr">id: bigint PK</text>
+  <text x="16" y="90" class="c1_attr">user_id: bigint FK &#x2192; User</text>
+  <text x="16" y="112" class="c1_attr">first_name: string(50)</text>
+  <text x="16" y="134" class="c1_attr">last_name: string(50)</text>
+  <text x="16" y="156" class="c1_attr">display_name: string(100)</text>
+  <text x="16" y="178" class="c1_attr">avatar_url: text</text>
+  <text x="16" y="200" class="c1_attr">bio: text</text>
+  <text x="16" y="222" class="c1_attr">interests: text[]</text>
+  <text x="16" y="244" class="c1_attr">preferred_periods: string</text>
+
+  <!-- ─── UX Preferences ─── -->
+  <line x1="0.5" y1="258" x2="399.5" y2="258" stroke="#333" stroke-width="0.8"/>
+  <text x="200" y="278" text-anchor="middle" class="c1_section-label">--- UX Preferences ---</text>
+  <line x1="0.5" y1="286" x2="399.5" y2="286" stroke="#ccc" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+  <text x="16" y="306" class="c1_attr">preferred_reader_layout: string</text>
+  <text x="16" y="328" class="c1_attr">prefers_historical_pops: boolean</text>
+  <text x="16" y="350" class="c1_attr">preference_include_maps: boolean</text>
+
+  <!-- ─── timestamps divider ─── -->
+  <line x1="0.5" y1="364" x2="399.5" y2="364" stroke="#333" stroke-width="0.8"/>
+  <line x1="0.5" y1="372" x2="399.5" y2="372" stroke="#ccc" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+  <text x="16" y="392" class="c1_attr">created_at: datetime</text>
+  <text x="16" y="414" class="c1_attr">updated_at: datetime</text>
+  </g>
+  <!-- 03_document.svg -->
+  <g transform="translate(50, 686)">
+    <defs>
+    <style>
+      .c2_class-name { font: bold 15px sans-serif; fill: #1a237e; }
+      .c2_section-label { font: bold 12px sans-serif; fill: #555; }
+      .c2_attr { font: 13px monospace; fill: #333; }
+    </style>
+  </defs>
+
+  <!-- Outer box -->
+  <rect x="0.5" y="0.5" width="419" height="679" rx="4" ry="4" fill="white" stroke="#333" stroke-width="1.2"/>
+
+  <!-- Header background -->
+  <rect x="1" y="1" width="418" height="39" rx="4" ry="4" fill="#E3F2FD" stroke="none"/>
+  <rect x="1" y="20" width="418" height="20" fill="#E3F2FD" stroke="none"/>
+  <line x1="0.5" y1="40.5" x2="419.5" y2="40.5" stroke="#333" stroke-width="1"/>
+
+  <!-- Header text -->
+  <text x="210" y="27" text-anchor="middle" class="c2_class-name">Document (CL03)</text>
+
+  <!-- ─── first divider ─── -->
+  <line x1="0.5" y1="48" x2="419.5" y2="48" stroke="#ccc" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+  <text x="16" y="68" class="c2_attr">id: uuid PK</text>
+  <text x="16" y="90" class="c2_attr">user_id: bigint FK &#x2192; User</text>
+  <text x="16" y="112" class="c2_attr">title: string</text>
+  <text x="16" y="134" class="c2_attr">source_type: string</text>
+  <text x="16" y="156" class="c2_attr">storage_path: text</text>
+  <text x="16" y="178" class="c2_attr">raw_text: text</text>
+  <text x="16" y="200" class="c2_attr">status: string</text>
+  <text x="16" y="222" class="c2_attr">page_count: integer</text>
+
+  <!-- ─── Audit Trail ─── -->
+  <line x1="0.5" y1="236" x2="419.5" y2="236" stroke="#333" stroke-width="0.8"/>
+  <text x="210" y="256" text-anchor="middle" class="c2_section-label">--- Audit Trail ---</text>
+  <line x1="0.5" y1="264" x2="419.5" y2="264" stroke="#ccc" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+  <text x="16" y="284" class="c2_attr">submitted_ip: inet</text>
+  <text x="16" y="306" class="c2_attr">submitted_user_agent: string</text>
+  <text x="16" y="328" class="c2_attr">processing_started_at: datetime</text>
+  <text x="16" y="350" class="c2_attr">processing_completed_at: datetime</text>
+  <text x="16" y="372" class="c2_attr">processing_duration_ms: integer</text>
+  <text x="16" y="394" class="c2_attr">error_message: text</text>
+  <text x="16" y="416" class="c2_attr">error_class: string</text>
+  <text x="16" y="438" class="c2_attr">entity_count: integer</text>
+  <text x="16" y="460" class="c2_attr">annotation_count: integer</text>
+  <text x="16" y="482" class="c2_attr">last_accessed_at: datetime</text>
+
+  <!-- ─── timestamps divider ─── -->
+  <line x1="0.5" y1="496" x2="419.5" y2="496" stroke="#333" stroke-width="0.8"/>
+  <line x1="0.5" y1="504" x2="419.5" y2="504" stroke="#ccc" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+  <text x="16" y="524" class="c2_attr">created_at: datetime</text>
+  <text x="16" y="546" class="c2_attr">updated_at: datetime</text>
+
+  <!-- ─── Methods ─── -->
+  <line x1="0.5" y1="560" x2="419.5" y2="560" stroke="#333" stroke-width="0.8"/>
+  <text x="210" y="580" text-anchor="middle" class="c2_section-label">--- Methods ---</text>
+  <line x1="0.5" y1="588" x2="419.5" y2="588" stroke="#ccc" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+  <text x="16" y="608" class="c2_attr">+ process!()</text>
+  <text x="16" y="630" class="c2_attr">+ ready?()</text>
+  </g>
+  <!-- 04_doc_page.svg -->
+  <g transform="translate(550, 686)">
+    <defs>
+    <style>
+      .c3_class-name { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 15px; font-weight: bold; fill: #333; }
+      .c3_attr { font-family: 'SF Mono', 'Menlo', 'Consolas', monospace; font-size: 13px; fill: #333; }
+    </style>
+  </defs>
+
+  <!-- Box -->
+  <rect x="0.5" y="0.5" width="339" height="199" rx="4" ry="4" fill="white" stroke="#333" stroke-width="1"/>
+
+  <!-- Header background -->
+  <rect x="0.5" y="0.5" width="339" height="38" rx="4" ry="4" fill="#E3F2FD" stroke="none"/>
+  <!-- Cover bottom rounded corners of header -->
+  <rect x="0.5" y="24" width="339" height="15" fill="#E3F2FD" stroke="none"/>
+  <!-- Header bottom border -->
+  <line x1="0.5" y1="38.5" x2="339.5" y2="38.5" stroke="#333" stroke-width="1"/>
+
+  <!-- Class name -->
+  <text x="170" y="25" text-anchor="middle" class="c3_class-name">DocPage (CL04)</text>
+
+  <!-- Attributes -->
+  <text x="16" y="62" class="c3_attr">id: bigint PK</text>
+  <text x="16" y="84" class="c3_attr">document_id: uuid FK &#x2192; Document</text>
+  <text x="16" y="106" class="c3_attr">page_number: integer</text>
+  <text x="16" y="128" class="c3_attr">page_text: text</text>
+  <text x="16" y="150" class="c3_attr">created_at: datetime</text>
+  <text x="16" y="172" class="c3_attr">updated_at: datetime</text>
+  </g>
+  <!-- 05_entity.svg -->
+  <g transform="translate(50, 1426)">
+    <defs>
+    <style>
+      .c4_class-name { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 15px; font-weight: bold; fill: #333; }
+      .c4_attr { font-family: 'SF Mono', 'Menlo', 'Consolas', monospace; font-size: 13px; fill: #333; }
+      .c4_section-label { font-family: 'SF Mono', 'Menlo', 'Consolas', monospace; font-size: 12px; font-style: italic; fill: #1565C0; }
+    </style>
+  </defs>
+
+  <!-- Box -->
+  <rect x="0.5" y="0.5" width="419" height="679" rx="4" ry="4" fill="white" stroke="#333" stroke-width="1"/>
+
+  <!-- Header background -->
+  <rect x="0.5" y="0.5" width="419" height="38" rx="4" ry="4" fill="#E3F2FD" stroke="none"/>
+  <rect x="0.5" y="24" width="419" height="15" fill="#E3F2FD" stroke="none"/>
+  <line x1="0.5" y1="38.5" x2="419.5" y2="38.5" stroke="#333" stroke-width="1"/>
+
+  <!-- Class name -->
+  <text x="210" y="25" text-anchor="middle" class="c4_class-name">Entity (CL05)</text>
+
+  <!-- === Top attributes === -->
+  <text x="16" y="62" class="c4_attr">id: bigint PK</text>
+  <text x="16" y="84" class="c4_attr">document_id: uuid FK &#x2192; Document</text>
+
+  <!-- Divider + SPAN FIELDS section label -->
+  <line x1="0.5" y1="94.5" x2="419.5" y2="94.5" stroke="#333" stroke-width="0.5"/>
+  <rect x="0.5" y="95" width="419" height="24" fill="#F5F5F5" stroke="none"/>
+  <text x="16" y="112" class="c4_section-label">SPAN FIELDS (future: TextSpan)</text>
+  <line x1="0.5" y1="119.5" x2="419.5" y2="119.5" stroke="#333" stroke-width="0.5"/>
+
+  <!-- Span attributes -->
+  <text x="16" y="140" class="c4_attr">page_number: integer</text>
+  <text x="16" y="162" class="c4_attr">entity_type: string</text>
+  <text x="16" y="184" class="c4_attr">raw_text: string</text>
+  <text x="16" y="206" class="c4_attr">char_offset_start: integer</text>
+  <text x="16" y="228" class="c4_attr">char_offset_end: integer</text>
+
+  <!-- Divider + RESOLUTION FIELDS section label -->
+  <line x1="0.5" y1="238.5" x2="419.5" y2="238.5" stroke="#333" stroke-width="0.5"/>
+  <rect x="0.5" y="239" width="419" height="24" fill="#F5F5F5" stroke="none"/>
+  <text x="16" y="256" class="c4_section-label">RESOLUTION FIELDS (future: EntityResolution)</text>
+  <line x1="0.5" y1="263.5" x2="419.5" y2="263.5" stroke="#333" stroke-width="0.5"/>
+
+  <!-- Resolution attributes -->
+  <text x="16" y="284" class="c4_attr">resolved_city_id: string</text>
+  <text x="16" y="306" class="c4_attr">resolved_year: integer</text>
+  <text x="16" y="328" class="c4_attr">alternative_years: integer[]</text>
+  <text x="16" y="350" class="c4_attr">date_precision: string</text>
+  <text x="16" y="372" class="c4_attr">resolved_country: string</text>
+  <text x="16" y="394" class="c4_attr">resolved_lat: float</text>
+  <text x="16" y="416" class="c4_attr">resolved_lon: float</text>
+
+  <!-- Divider + EXTRACTION AUDIT section label -->
+  <line x1="0.5" y1="426.5" x2="419.5" y2="426.5" stroke="#333" stroke-width="0.5"/>
+  <rect x="0.5" y="427" width="419" height="24" fill="#F5F5F5" stroke="none"/>
+  <text x="16" y="444" class="c4_section-label">EXTRACTION AUDIT</text>
+  <line x1="0.5" y1="451.5" x2="419.5" y2="451.5" stroke="#333" stroke-width="0.5"/>
+
+  <!-- Extraction audit attributes -->
+  <text x="16" y="472" class="c4_attr">extraction_method: string</text>
+  <text x="16" y="494" class="c4_attr">match_type: string</text>
+  <text x="16" y="516" class="c4_attr">confidence_score: float</text>
+  <text x="16" y="538" class="c4_attr">candidate_count: integer</text>
+  <text x="16" y="560" class="c4_attr">resolution_notes: text</text>
+  <text x="16" y="582" class="c4_attr">resolved_at: datetime</text>
+
+  <!-- Divider before timestamps -->
+  <line x1="0.5" y1="594.5" x2="419.5" y2="594.5" stroke="#333" stroke-width="0.5"/>
+
+  <!-- Timestamp attributes -->
+  <text x="16" y="618" class="c4_attr">created_at: datetime</text>
+  <text x="16" y="640" class="c4_attr">updated_at: datetime</text>
+  </g>
+  <!-- 06_annotation.svg -->
+  <g transform="translate(550, 1426)">
+    <defs>
+    <style>
+      .c5_class-name { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 15px; font-weight: bold; fill: #333; }
+      .c5_attr { font-family: 'SF Mono', 'Menlo', 'Consolas', monospace; font-size: 13px; fill: #333; }
+      .c5_section-label { font-family: 'SF Mono', 'Menlo', 'Consolas', monospace; font-size: 12px; font-style: italic; fill: #1565C0; }
+    </style>
+  </defs>
+
+  <!-- Box -->
+  <rect x="0.5" y="0.5" width="399" height="905" rx="4" ry="4" fill="white" stroke="#333" stroke-width="1"/>
+
+  <!-- Header background -->
+  <rect x="0.5" y="0.5" width="399" height="38" rx="4" ry="4" fill="#E3F2FD" stroke="none"/>
+  <rect x="0.5" y="24" width="399" height="15" fill="#E3F2FD" stroke="none"/>
+  <line x1="0.5" y1="38.5" x2="399.5" y2="38.5" stroke="#333" stroke-width="1"/>
+
+  <!-- Class name -->
+  <text x="200" y="25" text-anchor="middle" class="c5_class-name">Annotation (CL06)</text>
+
+  <!-- === Top attributes === -->
+  <text x="16" y="62" class="c5_attr">id: bigint PK</text>
+  <text x="16" y="84" class="c5_attr">document_id: uuid FK &#x2192; Document</text>
+  <text x="16" y="106" class="c5_attr">page_number: integer</text>
+  <text x="16" y="128" class="c5_attr">annotation_type: string</text>
+  <text x="16" y="150" class="c5_attr">entity_id: bigint FK &#x2192; Entity</text>
+  <text x="16" y="172" class="c5_attr">entity_a_id: bigint FK &#x2192; Entity</text>
+  <text x="16" y="194" class="c5_attr">entity_b_id: bigint FK &#x2192; Entity</text>
+
+  <!-- Divider + Population Data section label -->
+  <line x1="0.5" y1="206.5" x2="399.5" y2="206.5" stroke="#333" stroke-width="0.5"/>
+  <rect x="0.5" y="207" width="399" height="24" fill="#F5F5F5" stroke="none"/>
+  <text x="16" y="224" class="c5_section-label">Population Data</text>
+  <line x1="0.5" y1="231.5" x2="399.5" y2="231.5" stroke="#333" stroke-width="0.5"/>
+
+  <!-- Population Data attributes -->
+  <text x="16" y="252" class="c5_attr">city_name: string</text>
+  <text x="16" y="274" class="c5_attr">year_queried: integer</text>
+  <text x="16" y="296" class="c5_attr">city_population: bigint</text>
+  <text x="16" y="318" class="c5_attr">city_pop_interpolated: boolean</text>
+  <text x="16" y="340" class="c5_attr">country_name: string</text>
+  <text x="16" y="362" class="c5_attr">country_population: bigint</text>
+  <text x="16" y="384" class="c5_attr">continent_name: string</text>
+  <text x="16" y="406" class="c5_attr">continent_population: bigint</text>
+  <text x="16" y="428" class="c5_attr">gdp_per_capita: float</text>
+
+  <!-- Divider + Travel Data section label -->
+  <line x1="0.5" y1="440.5" x2="399.5" y2="440.5" stroke="#333" stroke-width="0.5"/>
+  <rect x="0.5" y="441" width="399" height="24" fill="#F5F5F5" stroke="none"/>
+  <text x="16" y="458" class="c5_section-label">Travel Data</text>
+  <line x1="0.5" y1="465.5" x2="399.5" y2="465.5" stroke="#333" stroke-width="0.5"/>
+
+  <!-- Travel Data attributes -->
+  <text x="16" y="486" class="c5_attr">distance_miles: float</text>
+  <text x="16" y="508" class="c5_attr">distance_adjusted: float</text>
+  <text x="16" y="530" class="c5_attr">terrain_multiplier: float</text>
+  <text x="16" y="552" class="c5_attr">foot_days_low: float</text>
+  <text x="16" y="574" class="c5_attr">foot_days_high: float</text>
+  <text x="16" y="596" class="c5_attr">horse_days_low: float</text>
+  <text x="16" y="618" class="c5_attr">horse_days_high: float</text>
+
+  <!-- Divider + Computation Audit section label -->
+  <line x1="0.5" y1="630.5" x2="399.5" y2="630.5" stroke="#333" stroke-width="0.5"/>
+  <rect x="0.5" y="631" width="399" height="24" fill="#F5F5F5" stroke="none"/>
+  <text x="16" y="648" class="c5_section-label">Computation Audit</text>
+  <line x1="0.5" y1="655.5" x2="399.5" y2="655.5" stroke="#333" stroke-width="0.5"/>
+
+  <!-- Computation Audit attributes -->
+  <text x="16" y="676" class="c5_attr">computed_at: datetime</text>
+  <text x="16" y="698" class="c5_attr">computation_duration_ms: integer</text>
+  <text x="16" y="720" class="c5_attr">data_sources_used: text[]</text>
+  <text x="16" y="742" class="c5_attr">city_pop_bracketing_years: integer[]</text>
+  <text x="16" y="764" class="c5_attr">interpolation_method: string</text>
+  <text x="16" y="786" class="c5_attr">country_pop_source: string</text>
+  <text x="16" y="808" class="c5_attr">continent_pop_source: string</text>
+  <text x="16" y="830" class="c5_attr">stale: boolean</text>
+
+  <!-- Divider before timestamps -->
+  <line x1="0.5" y1="842.5" x2="399.5" y2="842.5" stroke="#333" stroke-width="0.5"/>
+
+  <!-- Timestamp attributes -->
+  <text x="16" y="866" class="c5_attr">created_at: datetime</text>
+  <text x="16" y="888" class="c5_attr">updated_at: datetime</text>
+  </g>
+  <!-- 07_urban_population.svg -->
+  <g transform="translate(50, 2392)">
+    <defs>
+    <style>
+      .c6_class-name { font: bold 15px sans-serif; fill: #1B5E20; }
+      .c6_class-note { font: italic 11px sans-serif; fill: #555; }
+      .c6_attr { font: 13px monospace; fill: #333; }
+    </style>
+  </defs>
+
+  <!-- Card outline -->
+  <rect x="0.5" y="0.5" width="359" height="329" rx="4" ry="4"
+        fill="white" stroke="#333" stroke-width="1"/>
+
+  <!-- Header background -->
+  <rect x="0.5" y="0.5" width="359" height="50" rx="4" ry="4"
+        fill="#E8F5E9" stroke="none"/>
+  <!-- Cover bottom corners of header so only top is rounded -->
+  <rect x="0.5" y="30" width="359" height="21" fill="#E8F5E9" stroke="none"/>
+  <!-- Header bottom border -->
+  <line x1="0.5" y1="50.5" x2="359.5" y2="50.5" stroke="#333" stroke-width="1"/>
+
+  <!-- Header text -->
+  <text x="180" y="24" text-anchor="middle" class="c6_class-name">UrbanPopulation (CL07)</text>
+  <text x="180" y="42" text-anchor="middle" class="c6_class-note">(seed data, read-only)</text>
+
+  <!-- Attributes -->
+  <text x="16" y="74" class="c6_attr">id: bigint PK</text>
+  <text x="16" y="96" class="c6_attr">city: string</text>
+  <text x="16" y="118" class="c6_attr">other_name: string</text>
+  <text x="16" y="140" class="c6_attr">country: string</text>
+
+  <!-- Divider -->
+  <line x1="16" y1="150" x2="344" y2="150" stroke="#CCC" stroke-width="0.5"/>
+
+  <text x="16" y="170" class="c6_attr">location: geography(Point, 4326)</text>
+  <text x="16" y="192" class="c6_attr">latitude: float</text>
+  <text x="16" y="214" class="c6_attr">longitude: float</text>
+
+  <!-- Divider -->
+  <line x1="16" y1="224" x2="344" y2="224" stroke="#CCC" stroke-width="0.5"/>
+
+  <text x="16" y="244" class="c6_attr">certainty: smallint (1-3)</text>
+  <text x="16" y="266" class="c6_attr">year: integer</text>
+  <text x="16" y="288" class="c6_attr">population: bigint</text>
+  <text x="16" y="310" class="c6_attr">city_id: string</text>
+  </g>
+  <!-- 08_regional_population.svg -->
+  <g transform="translate(550, 2392)">
+    <defs>
+    <style>
+      .c7_class-name { font: bold 15px sans-serif; fill: #1B5E20; }
+      .c7_class-note { font: italic 11px sans-serif; fill: #555; }
+      .c7_attr { font: 13px monospace; fill: #333; }
+      .c7_constraint { font: italic 12px monospace; fill: #666; }
+    </style>
+  </defs>
+
+  <!-- Card outline -->
+  <rect x="0.5" y="0.5" width="439" height="369" rx="4" ry="4"
+        fill="white" stroke="#333" stroke-width="1"/>
+
+  <!-- Header background -->
+  <rect x="0.5" y="0.5" width="439" height="50" rx="4" ry="4"
+        fill="#E8F5E9" stroke="none"/>
+  <!-- Cover bottom corners of header so only top is rounded -->
+  <rect x="0.5" y="30" width="439" height="21" fill="#E8F5E9" stroke="none"/>
+  <!-- Header bottom border -->
+  <line x1="0.5" y1="50.5" x2="439.5" y2="50.5" stroke="#333" stroke-width="1"/>
+
+  <!-- Header text -->
+  <text x="220" y="24" text-anchor="middle" class="c7_class-name">RegionalPopulation (CL08)</text>
+  <text x="220" y="42" text-anchor="middle" class="c7_class-note">(seed data, read-only)</text>
+
+  <!-- Attributes -->
+  <text x="16" y="74" class="c7_attr">id: bigint PK</text>
+  <text x="16" y="96" class="c7_attr">region_name: string</text>
+  <text x="16" y="118" class="c7_attr">region_type: string</text>
+  <text x="16" y="140" class="c7_attr">parent_region: string</text>
+  <text x="16" y="162" class="c7_attr">year: integer</text>
+
+  <!-- Divider -->
+  <line x1="16" y1="172" x2="424" y2="172" stroke="#CCC" stroke-width="0.5"/>
+
+  <text x="16" y="192" class="c7_attr">population_estimate: bigint</text>
+  <text x="16" y="214" class="c7_attr">gdp_per_capita: float</text>
+  <text x="16" y="236" class="c7_attr">estimate_source: string</text>
+  <text x="16" y="258" class="c7_attr">confidence_tier: integer (1-4)</text>
+  <text x="16" y="280" class="c7_attr">notes: text</text>
+
+  <!-- Divider before constraints -->
+  <line x1="0.5" y1="294" x2="439.5" y2="294" stroke="#333" stroke-width="1"/>
+
+  <!-- Constraints section -->
+  <text x="16" y="316" class="c7_constraint">UNIQUE(region_name, region_type,</text>
+  <text x="16" y="336" class="c7_constraint">       year, estimate_source)</text>
+  </g>
+  <!-- 09_travel_speed_reference.svg -->
+  <g transform="translate(1050, 2392)">
+    <defs>
+    <style>
+      .c8_class-name { font: bold 15px sans-serif; fill: #1B5E20; }
+      .c8_class-note { font: italic 11px sans-serif; fill: #555; }
+      .c8_attr { font: 13px monospace; fill: #333; }
+    </style>
+  </defs>
+
+  <!-- Card outline -->
+  <rect x="0.5" y="0.5" width="319" height="229" rx="4" ry="4"
+        fill="white" stroke="#333" stroke-width="1"/>
+
+  <!-- Header background -->
+  <rect x="0.5" y="0.5" width="319" height="50" rx="4" ry="4"
+        fill="#E8F5E9" stroke="none"/>
+  <!-- Cover bottom corners of header so only top is rounded -->
+  <rect x="0.5" y="30" width="319" height="21" fill="#E8F5E9" stroke="none"/>
+  <!-- Header bottom border -->
+  <line x1="0.5" y1="50.5" x2="319.5" y2="50.5" stroke="#333" stroke-width="1"/>
+
+  <!-- Header text -->
+  <text x="160" y="24" text-anchor="middle" class="c8_class-name">TravelSpeedReference (CL09)</text>
+  <text x="160" y="42" text-anchor="middle" class="c8_class-note">(seed data, read-only)</text>
+
+  <!-- Attributes -->
+  <text x="16" y="74" class="c8_attr">id: bigint PK</text>
+  <text x="16" y="96" class="c8_attr">mode: string</text>
+  <text x="16" y="118" class="c8_attr">condition: string</text>
+
+  <!-- Divider -->
+  <line x1="16" y1="128" x2="304" y2="128" stroke="#CCC" stroke-width="0.5"/>
+
+  <text x="16" y="148" class="c8_attr">km_per_day_low: float</text>
+  <text x="16" y="170" class="c8_attr">km_per_day_mid: float</text>
+  <text x="16" y="192" class="c8_attr">km_per_day_high: float</text>
+  </g>
+
+</svg>

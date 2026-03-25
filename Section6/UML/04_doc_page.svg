@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 200" width="340" height="200">
+  <defs>
+    <style>
+      .class-name { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 15px; font-weight: bold; fill: #333; }
+      .attr { font-family: 'SF Mono', 'Menlo', 'Consolas', monospace; font-size: 13px; fill: #333; }
+    </style>
+  </defs>
+
+  <!-- Box -->
+  <rect x="0.5" y="0.5" width="339" height="199" rx="4" ry="4" fill="white" stroke="#333" stroke-width="1"/>
+
+  <!-- Header background -->
+  <rect x="0.5" y="0.5" width="339" height="38" rx="4" ry="4" fill="#E3F2FD" stroke="none"/>
+  <!-- Cover bottom rounded corners of header -->
+  <rect x="0.5" y="24" width="339" height="15" fill="#E3F2FD" stroke="none"/>
+  <!-- Header bottom border -->
+  <line x1="0.5" y1="38.5" x2="339.5" y2="38.5" stroke="#333" stroke-width="1"/>
+
+  <!-- Class name -->
+  <text x="170" y="25" text-anchor="middle" class="class-name">DocPage (CL04)</text>
+
+  <!-- Attributes -->
+  <text x="16" y="62" class="attr">id: bigint PK</text>
+  <text x="16" y="84" class="attr">document_id: uuid FK &#x2192; Document</text>
+  <text x="16" y="106" class="attr">page_number: integer</text>
+  <text x="16" y="128" class="attr">page_text: text</text>
+  <text x="16" y="150" class="attr">created_at: datetime</text>
+  <text x="16" y="172" class="attr">updated_at: datetime</text>
+</svg>

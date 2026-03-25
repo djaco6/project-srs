@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460" width="400" height="460">
+  <defs>
+    <style>
+      .class-name { font: bold 15px sans-serif; fill: #1a237e; }
+      .section-label { font: bold 12px sans-serif; fill: #555; }
+      .attr { font: 13px monospace; fill: #333; }
+    </style>
+  </defs>
+
+  <!-- Outer box -->
+  <rect x="0.5" y="0.5" width="399" height="459" rx="4" ry="4" fill="white" stroke="#333" stroke-width="1.2"/>
+
+  <!-- Header background -->
+  <rect x="1" y="1" width="398" height="39" rx="4" ry="4" fill="#E3F2FD" stroke="none"/>
+  <rect x="1" y="20" width="398" height="20" fill="#E3F2FD" stroke="none"/>
+  <line x1="0.5" y1="40.5" x2="399.5" y2="40.5" stroke="#333" stroke-width="1"/>
+
+  <!-- Header text -->
+  <text x="200" y="27" text-anchor="middle" class="class-name">UserProfile (CL02)</text>
+
+  <!-- ─── first divider ─── -->
+  <line x1="0.5" y1="48" x2="399.5" y2="48" stroke="#ccc" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+  <text x="16" y="68" class="attr">id: bigint PK</text>
+  <text x="16" y="90" class="attr">user_id: bigint FK &#x2192; User</text>
+  <text x="16" y="112" class="attr">first_name: string(50)</text>
+  <text x="16" y="134" class="attr">last_name: string(50)</text>
+  <text x="16" y="156" class="attr">display_name: string(100)</text>
+  <text x="16" y="178" class="attr">avatar_url: text</text>
+  <text x="16" y="200" class="attr">bio: text</text>
+  <text x="16" y="222" class="attr">interests: text[]</text>
+  <text x="16" y="244" class="attr">preferred_periods: string</text>
+
+  <!-- ─── UX Preferences ─── -->
+  <line x1="0.5" y1="258" x2="399.5" y2="258" stroke="#333" stroke-width="0.8"/>
+  <text x="200" y="278" text-anchor="middle" class="section-label">--- UX Preferences ---</text>
+  <line x1="0.5" y1="286" x2="399.5" y2="286" stroke="#ccc" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+  <text x="16" y="306" class="attr">preferred_reader_layout: string</text>
+  <text x="16" y="328" class="attr">prefers_historical_pops: boolean</text>
+  <text x="16" y="350" class="attr">preference_include_maps: boolean</text>
+
+  <!-- ─── timestamps divider ─── -->
+  <line x1="0.5" y1="364" x2="399.5" y2="364" stroke="#333" stroke-width="0.8"/>
+  <line x1="0.5" y1="372" x2="399.5" y2="372" stroke="#ccc" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+  <text x="16" y="392" class="attr">created_at: datetime</text>
+  <text x="16" y="414" class="attr">updated_at: datetime</text>
+</svg>
