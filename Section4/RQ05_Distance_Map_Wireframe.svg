@@ -1,0 +1,74 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='375' height='812' viewBox='0 0 375 812'>
+  <defs>
+    <style>
+      .bg { fill: #FFFFFF; }
+      .header { fill: #1976D2; }
+      .header-text { font-family: Arial; font-size: 14px; font-weight: bold; fill: #FFFFFF; }
+      .label { font-family: Arial; font-size: 12px; fill: #333333; }
+      .map-bg { fill: #E8F4F8; }
+      .pin { fill: #FF6B6B; }
+      .pin-selected { fill: #FFD700; stroke: #FF6B6B; stroke-width: 2; }
+      .card { fill: #FFFFFF; stroke: #EEEEEE; stroke-width: 1; }
+      .card-title { font-family: Arial; font-size: 14px; font-weight: bold; fill: #333; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class='bg' width='375' height='812'/>
+
+  <!-- Header -->
+  <rect class='header' width='375' height='60'/>
+  <text class='header-text' x='20' y='40'>← Back</text>
+  <text class='header-text' x='187.5' y='40' text-anchor='middle'>Map View</text>
+
+  <!-- Map Area -->
+  <rect class='map-bg' x='15' y='80' width='345' height='400' rx='4' stroke='#CCCCCC' stroke-width='1'/>
+  
+  <!-- Map Grid -->
+  <line x1='30' y1='100' x2='330' y2='100' stroke='#D0D0D0' stroke-width='0.5'/>
+  <line x1='30' y1='150' x2='330' y2='150' stroke='#D0D0D0' stroke-width='0.5'/>
+  <line x1='30' y1='200' x2='330' y2='200' stroke='#D0D0D0' stroke-width='0.5'/>
+  <line x1='30' y1='250' x2='330' y2='250' stroke='#D0D0D0' stroke-width='0.5'/>
+  <line x1='30' y1='300' x2='330' y2='300' stroke='#D0D0D0' stroke-width='0.5'/>
+  <line x1='30' y1='350' x2='330' y2='350' stroke='#D0D0D0' stroke-width='0.5'/>
+  <line x1='30' y1='400' x2='330' y2='400' stroke='#D0D0D0' stroke-width='0.5'/>
+  <line x1='60' y1='80' x2='60' y2='480' stroke='#D0D0D0' stroke-width='0.5'/>
+  <line x1='120' y1='80' x2='120' y2='480' stroke='#D0D0D0' stroke-width='0.5'/>
+  <line x1='180' y1='80' x2='180' y2='480' stroke='#D0D0D0' stroke-width='0.5'/>
+  <line x1='240' y1='80' x2='240' y2='480' stroke='#D0D0D0' stroke-width='0.5'/>
+  <line x1='300' y1='80' x2='300' y2='480' stroke='#D0D0D0' stroke-width='0.5'/>
+
+  <!-- Paris Pin (Selected) -->
+  <circle class='pin-selected' cx='100' cy='150' r='8'/>
+  <text class='label' x='100' y='175' text-anchor='middle' font-size='11' font-weight='bold'>Paris</text>
+
+  <!-- Lyon Pin -->
+  <circle class='pin' cx='140' cy='280' r='8'/>
+  <text class='label' x='140' y='305' text-anchor='middle' font-size='11' font-weight='bold'>Lyon</text>
+
+  <!-- Distance Line -->
+  <line x1='100' y1='150' x2='140' y2='280' stroke='#FF6B6B' stroke-width='2' stroke-dasharray='5,5'/>
+  <text class='label' x='115' y='210' fill='#FF6B6B' font-weight='bold'>463 km</text>
+
+  <!-- Travel Times Card -->
+  <rect class='card' x='15' y='510' width='345' height='280' rx='4'/>
+  <text class='card-title' x='25' y='535'>Travel Times: Paris ↔ Lyon</text>
+  <line x1='15' y1='545' x2='360' y2='545' stroke='#EEEEEE' stroke-width='1'/>
+  
+  <!-- Distance Info -->
+  <text class='label' x='25' y='570' font-size='13' font-weight='bold'>Distance: 463 km (288 miles)</text>
+  
+  <!-- Travel Methods -->
+  <text class='label' x='25' y='600'>🚶 On Foot</text>
+  <text class='label' x='30' y='620'>~97 days (5 mph average)</text>
+  
+  <text class='label' x='25' y='645'>🐴 Horseback</text>
+  <text class='label' x='30' y='665'>~14 days (33 mph average)</text>
+  
+  <text class='label' x='25' y='690'>🛒 Cart/Carriage</text>
+  <text class='label' x='30' y='710'>~21 days (22 mph average)</text>
+
+  <!-- Clear Selection Button -->
+  <rect x='25' y='730' width='325' height='40' fill='#F0F0F0' stroke='#CCCCCC' stroke-width='1' rx='4'/>
+  <text class='label' x='187.5' y='757' text-anchor='middle' font-weight='bold'>Clear Selection</text>
+</svg>

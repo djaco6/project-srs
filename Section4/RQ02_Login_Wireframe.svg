@@ -1,0 +1,63 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='375' height='812' viewBox='0 0 375 812'>
+  <defs>
+    <style>
+      .bg { fill: #FFFFFF; }
+      .header { fill: #1976D2; }
+      .header-text { font-family: Arial; font-size: 20px; font-weight: bold; fill: #FFFFFF; }
+      .label { font-family: Arial; font-size: 14px; fill: #333333; font-weight: 500; }
+      .input-box { fill: #FFFFFF; stroke: #CCCCCC; stroke-width: 1; }
+      .button { fill: #4CAF50; stroke: none; }
+      .button-text { font-family: Arial; font-size: 16px; fill: #FFFFFF; font-weight: bold; }
+      .link { font-family: Arial; font-size: 12px; fill: #1976D2; text-decoration: underline; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class='bg' width='375' height='812'/>
+
+  <!-- Header -->
+  <rect class='header' width='375' height='80'/>
+  <text class='header-text' x='187.5' y='50' text-anchor='middle'>Alexandria</text>
+
+  <!-- Title -->
+  <text class='label' x='30' y='140' font-size='28' font-weight='bold' fill='#000'>Welcome Back</text>
+  <text class='label' x='30' y='170' font-size='14' fill='#666'>Log in to access your documents</text>
+
+  <!-- Email Label -->
+  <text class='label' x='30' y='220'>Email Address</text>
+  <!-- Email Input -->
+  <rect class='input-box' x='30' y='235' width='315' height='50' rx='4'/>
+  <text class='label' x='40' y='265' fill='#999'>your@email.com</text>
+
+  <!-- Password Label -->
+  <text class='label' x='30' y='325'>Password</text>
+  <!-- Password Input -->
+  <rect class='input-box' x='30' y='340' width='315' height='50' rx='4'/>
+  <text class='label' x='40' y='370' fill='#999'>••••••••</text>
+
+  <!-- Remember Me Checkbox -->
+  <rect x='30' y='430' width='20' height='20' fill='#FFFFFF' stroke='#CCCCCC' stroke-width='1'/>
+  <text class='label' x='60' y='445' font-size='12'>Remember me</text>
+
+  <!-- Forgot Password Link -->
+  <text class='link' x='280' y='445' text-anchor='end'>Forgot password?</text>
+
+  <!-- Login Button -->
+  <rect class='button' x='30' y='500' width='315' height='50' rx='4'/>
+  <text class='button-text' x='187.5' y='533' text-anchor='middle'>Log In</text>
+
+  <!-- Sign Up Link -->
+  <text class='label' x='30' y='600' font-size='14'>Don't have an account?</text>
+  <text class='link' x='30' y='625'>Sign up here</text>
+
+  <!-- Social Login -->
+  <text class='label' x='187.5' y='680' text-anchor='middle' font-size='12' fill='#999'>Or continue with</text>
+  
+  <!-- Google Button -->
+  <rect x='50' y='700' width='140' height='45' fill='#F3F3F3' stroke='#CCCCCC' stroke-width='1' rx='4'/>
+  <text class='label' x='120' y='730' text-anchor='middle'>Google</text>
+
+  <!-- GitHub Button -->
+  <rect x='200' y='700' width='140' height='45' fill='#F3F3F3' stroke='#CCCCCC' stroke-width='1' rx='4'/>
+  <text class='label' x='270' y='730' text-anchor='middle'>GitHub</text>
+</svg>

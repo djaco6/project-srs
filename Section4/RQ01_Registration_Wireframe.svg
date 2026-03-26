@@ -1,0 +1,59 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='375' height='812' viewBox='0 0 375 812'>
+  <defs>
+    <style>
+      .bg { fill: #FFFFFF; }
+      .header { fill: #1976D2; }
+      .header-text { font-family: Arial; font-size: 20px; font-weight: bold; fill: #FFFFFF; }
+      .label { font-family: Arial; font-size: 14px; fill: #333333; font-weight: 500; }
+      .input-box { fill: #FFFFFF; stroke: #CCCCCC; stroke-width: 1; }
+      .button { fill: #4CAF50; stroke: none; }
+      .button-text { font-family: Arial; font-size: 16px; fill: #FFFFFF; font-weight: bold; }
+      .link { font-family: Arial; font-size: 12px; fill: #1976D2; text-decoration: underline; }
+      .divider { stroke: #EEEEEE; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class='bg' width='375' height='812'/>
+
+  <!-- Header -->
+  <rect class='header' width='375' height='80'/>
+  <text class='header-text' x='187.5' y='50' text-anchor='middle'>Alexandria</text>
+
+  <!-- Title -->
+  <text class='label' x='30' y='140' font-size='28' font-weight='bold' fill='#000'>Create Account</text>
+  <text class='label' x='30' y='170' font-size='14' fill='#666'>Sign up to save your documents</text>
+
+  <!-- Email Label -->
+  <text class='label' x='30' y='220'>Email Address</text>
+  <!-- Email Input -->
+  <rect class='input-box' x='30' y='235' width='315' height='50' rx='4'/>
+  <text class='label' x='40' y='265' fill='#999'>Enter your email</text>
+
+  <!-- Password Label -->
+  <text class='label' x='30' y='325'>Password</text>
+  <!-- Password Input -->
+  <rect class='input-box' x='30' y='340' width='315' height='50' rx='4'/>
+  <text class='label' x='40' y='370' fill='#999'>At least 8 characters</text>
+
+  <!-- Confirm Password Label -->
+  <text class='label' x='30' y='430'>Confirm Password</text>
+  <!-- Confirm Password Input -->
+  <rect class='input-box' x='30' y='445' width='315' height='50' rx='4'/>
+  <text class='label' x='40' y='475' fill='#999'>Re-enter password</text>
+
+  <!-- Terms Checkbox -->
+  <rect x='30' y='530' width='20' height='20' fill='#FFFFFF' stroke='#CCCCCC' stroke-width='1'/>
+  <text class='label' x='60' y='545' font-size='12'>I agree to the Terms of Service</text>
+
+  <!-- Create Account Button -->
+  <rect class='button' x='30' y='590' width='315' height='50' rx='4'/>
+  <text class='button-text' x='187.5' y='623' text-anchor='middle'>Create Account</text>
+
+  <!-- Divider -->
+  <line class='divider' x1='30' y1='670' x2='345' y2='670'/>
+
+  <!-- Login Link -->
+  <text class='label' x='30' y='710' font-size='14'>Already have an account?</text>
+  <text class='link' x='30' y='735'>Log in here</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='375' height='812' viewBox='0 0 375 812'>
+  <defs>
+    <style>
+      .bg { fill: #FFFFFF; }
+      .header { fill: #1976D2; }
+      .header-text { font-family: Arial; font-size: 16px; font-weight: bold; fill: #FFFFFF; }
+      .label { font-family: Arial; font-size: 14px; fill: #333333; font-weight: 500; }
+      .input-box { fill: #FFFFFF; stroke: #CCCCCC; stroke-width: 1; }
+      .button { fill: #4CAF50; stroke: none; }
+      .button-disabled { fill: #CCCCCC; stroke: none; }
+      .button-text { font-family: Arial; font-size: 14px; fill: #FFFFFF; font-weight: bold; }
+      .placeholder { fill: #999999; font-family: Arial; font-size: 13px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class='bg' width='375' height='812'/>
+
+  <!-- Header -->
+  <rect class='header' width='375' height='80'/>
+  <text class='header-text' x='20' y='50'>← My Documents</text>
+  <text class='header-text' x='187.5' y='50' text-anchor='middle' font-size='18'>New Document</text>
+
+  <!-- Tabs -->
+  <rect x='0' y='80' width='187.5' height='50' fill='#E8E8E8'/>
+  <text class='label' x='93.75' y='115' text-anchor='middle'>Paste Text</text>
+  <rect x='187.5' y='80' width='187.5' height='50' fill='#FFFFFF'/>
+  <text class='label' x='281.25' y='115' text-anchor='middle'>Upload File</text>
+
+  <!-- Title -->
+  <text class='label' x='30' y='160' font-size='16' font-weight='bold'>Paste your text here</text>
+  <text class='label' x='30' y='185' font-size='12' fill='#666'>Historical documents, articles, passages</text>
+
+  <!-- Text Area -->
+  <rect class='input-box' x='20' y='210' width='335' height='350' rx='4'/>
+  <text class='placeholder' x='30' y='235'>Paste your historical text here...</text>
+  <text class='placeholder' x='30' y='260'>e.g., "In 1832, Paris underwent major changes..."</text>
+
+  <!-- Character Count -->
+  <text class='placeholder' x='30' y='540' font-size='11'>0 / 50,000 characters</text>
+
+  <!-- Analyze Button -->
+  <rect class='button-disabled' x='30' y='570' width='315' height='50' rx='4'/>
+  <text class='button-text' x='187.5' y='603' text-anchor='middle'>Analyze Text</text>
+  <text class='placeholder' x='30' y='625' font-size='11'>Paste text first to enable</text>
+
+  <!-- Info Box -->
+  <rect x='20' y='650' width='335' height='140' fill='#F5F5F5' stroke='#EEEEEE' stroke-width='1' rx='4'/>
+  <text class='label' x='30' y='675' font-size='13' font-weight='bold'>📋 What happens next?</text>
+  <text class='label' x='30' y='700' font-size='12'>• Locations are identified</text>
+  <text class='label' x='30' y='720' font-size='12'>• Dates are extracted</text>
+  <text class='label' x='30' y='740' font-size='12'>• Interactive map displays results</text>
+  <text class='label' x='30' y='760' font-size='12'>• Document is auto-saved</text>
+</svg>

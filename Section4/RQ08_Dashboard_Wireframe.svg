@@ -1,0 +1,56 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='375' height='812' viewBox='0 0 375 812'>
+  <defs>
+    <style>
+      .bg { fill: #FFFFFF; }
+      .header { fill: #1976D2; }
+      .header-text { font-family: Arial; font-size: 16px; font-weight: bold; fill: #FFFFFF; }
+      .label { font-family: Arial; font-size: 12px; fill: #333333; }
+      .card { fill: #FFFFFF; stroke: #EEEEEE; stroke-width: 1; }
+      .card-title { font-family: Arial; font-size: 14px; font-weight: bold; fill: #333; }
+      .card-meta { font-family: Arial; font-size: 11px; fill: #666; }
+      .button { fill: #4CAF50; stroke: none; }
+      .button-text { font-family: Arial; font-size: 14px; fill: #FFFFFF; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class='bg' width='375' height='812'/>
+
+  <!-- Header -->
+  <rect class='header' width='375' height='80'/>
+  <text class='header-text' x='20' y='40'>Alexandria</text>
+  <circle cx='340' cy='40' r='15' fill='#4CAF50'/>
+  <text class='header-text' x='340' y='48' text-anchor='middle'>U</text>
+
+  <!-- Page Title -->
+  <text x='20' y='130' font-family='Arial' font-size='24' font-weight='bold' fill='#000'>My Documents</text>
+  <text class='label' x='20' y='155' fill='#666'>3 documents saved</text>
+
+  <!-- New Document Button -->
+  <rect class='button' x='20' y='170' width='335' height='45' rx='4'/>
+  <text class='button-text' x='187.5' y='198' text-anchor='middle'>+ New Document</text>
+
+  <!-- Document Card 1 -->
+  <rect class='card' x='15' y='240' width='345' height='140' rx='4' stroke-width='1'/>
+  <rect x='15' y='240' width='345' height='80' fill='#E8F4F8' rx='4' rx-top='4'/>
+  <text class='label' x='25' y='290' font-size='10' fill='#999'>Map Thumbnail</text>
+  <text class='card-title' x='25' y='335'>History of Paris</text>
+  <text class='card-meta' x='25' y='355'>📅 Mar 25, 2026 | 📍 12 entities</text>
+  <text class='card-meta' x='25' y='370'>Duration: 2.3 seconds</text>
+
+  <!-- Document Card 2 -->
+  <rect class='card' x='15' y='395' width='345' height='140' rx='4' stroke-width='1'/>
+  <rect x='15' y='395' width='345' height='80' fill='#F0E8F4' rx='4' rx-top='4'/>
+  <text class='label' x='25' y='445' font-size='10' fill='#999'>Map Thumbnail</text>
+  <text class='card-title' x='25' y='490'>19th Century Journey</text>
+  <text class='card-meta' x='25' y='510'>📅 Mar 24, 2026 | 📍 8 entities</text>
+  <text class='card-meta' x='25' y='525'>Duration: 1.9 seconds</text>
+
+  <!-- Document Card 3 -->
+  <rect class='card' x='15' y='550' width='345' height='140' rx='4' stroke-width='1'/>
+  <rect x='15' y='550' width='345' height='80' fill='#E8F8E8' rx='4' rx-top='4'/>
+  <text class='label' x='25' y='600' font-size='10' fill='#999'>Map Thumbnail</text>
+  <text class='card-title' x='25' y='645'>Travel Records</text>
+  <text class='card-meta' x='25' y='665'>📅 Mar 20, 2026 | 📍 15 entities</text>
+  <text class='card-meta' x='25' y='680'>Duration: 3.1 seconds</text>
+</svg>

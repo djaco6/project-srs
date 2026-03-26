@@ -1,0 +1,57 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='375' height='812' viewBox='0 0 375 812'>
+  <defs>
+    <style>
+      .bg { fill: #FFFFFF; }
+      .header { fill: #1976D2; }
+      .header-text { font-family: Arial; font-size: 14px; font-weight: bold; fill: #FFFFFF; }
+      .label { font-family: Arial; font-size: 12px; fill: #333333; }
+      .highlight-location { fill: none; stroke: #2196F3; stroke-width: 2; text-decoration: underline; }
+      .tab-active { fill: #1976D2; }
+      .tab-inactive { fill: #E0E0E0; }
+      .card { fill: #FFFFFF; stroke: #EEEEEE; stroke-width: 1; }
+      .card-title { font-family: Arial; font-size: 14px; font-weight: bold; fill: #333; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class='bg' width='375' height='812'/>
+
+  <!-- Header -->
+  <rect class='header' width='375' height='60'/>
+  <text class='header-text' x='20' y='40'>← Back</text>
+  <text class='header-text' x='187.5' y='40' text-anchor='middle'>History of Paris</text>
+
+  <!-- Tabs -->
+  <rect class='tab-active' x='0' y='60' width='187.5' height='40'/>
+  <text class='header-text' x='93.75' y='87' text-anchor='middle' font-size='12'>Reader</text>
+  <rect class='tab-inactive' x='187.5' y='60' width='187.5' height='40'/>
+  <text class='label' x='281.25' y='87' text-anchor='middle'>Map</text>
+
+  <!-- Content -->
+  <rect x='15' y='110' width='345' height='350' fill='#FFFACD' stroke='#EEEEEE' stroke-width='1' rx='4'/>
+  <text class='label' x='25' y='130'>In 1832, <tspan fill='#2196F3' text-decoration='underline'>Paris</tspan> underwent major political upheaval. The city's population was approximately 775,000, making it one of Europe's largest cities.</text>
+  <text class='label' x='25' y='170'>The distance between <tspan fill='#2196F3' text-decoration='underline'>Paris</tspan> and <tspan fill='#2196F3' text-decoration='underline'>Lyon</tspan> was a significant journey, taking approximately 14 days by horseback.</text>
+  <text class='label' x='25' y='210'>Travelers departing from <tspan fill='#2196F3' text-decoration='underline'>Paris</tspan> in 1832 would journey through the French countryside to reach other major cities...</text>
+
+  <!-- Sidebar Toggle Button -->
+  <rect x='20' y='480' width='40' height='40' fill='#F0F0F0' stroke='#CCCCCC' stroke-width='1' rx='4'/>
+  <text class='label' x='40' y='505' text-anchor='middle' font-size='16'>→</text>
+
+  <!-- Annotation Cards Section -->
+  <text class='label' x='25' y='550' font-size='13' font-weight='bold'>📍 Mentioned Locations</text>
+
+  <!-- Paris Card -->
+  <rect class='card' x='15' y='565' width='345' height='100' rx='4'/>
+  <text class='card-title' x='25' y='585'>Paris (1832)</text>
+  <text class='label' x='25' y='605'>Population: ~775,000</text>
+  <text class='label' x='25' y='620'>France: ~32.6 million</text>
+  <text class='label' x='25' y='640'>Coordinates: 48.8566°N, 2.3522°E</text>
+  <text class='label' x='300' y='605' text-anchor='end' fill='#2196F3'>▶ Expand</text>
+
+  <!-- Lyon Card -->
+  <rect class='card' x='15' y='680' width='345' height='100' rx='4'/>
+  <text class='card-title' x='25' y='700'>Lyon (1825)</text>
+  <text class='label' x='25' y='720'>Population: ~130,000</text>
+  <text class='label' x='25' y='735'>Regional info available</text>
+  <text class='label' x='300' y='720' text-anchor='end' fill='#2196F3'>▶ Expand</text>
+</svg>
