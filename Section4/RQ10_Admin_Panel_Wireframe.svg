@@ -18,7 +18,7 @@
   <!-- Admin Header (Red) -->
   <rect class='header' width='375' height='80'/>
   <text class='header-text' x='187.5' y='50' text-anchor='middle'>Admin Panel</text>
-  <text x='20' y='72' font-family='Arial' font-size='12' fill='#FFFFFF'>🔒 Admin User</text>
+  <text x='20' y='72' font-family='Arial' font-size='12' fill='#FFFFFF'>Admin User</text>
 
   <!-- Tabs -->
   <rect x='0' y='80' width='187.5' height='40' fill='#D32F2F'/>
@@ -28,7 +28,7 @@
 
   <!-- Title -->
   <text x='20' y='150' font-family='Arial' font-size='16' font-weight='bold'>User Submissions</text>
-  <text class='label' x='20' y='170' fill='#666'>Viewing: Page 1 of 5 | Total: 127 submissions</text>
+  <text class='label' x='20' y='170' fill='#666'>Page 1 of 5 | Total: 127</text>
 
   <!-- Table Header -->
   <rect class='table-header' x='15' y='190' width='60' height='30'/>
@@ -72,7 +72,7 @@
 
   <!-- Row 4 -->
   <rect class='table-row' x='15' y='325' width='345' height='35'/>
-  <text class='label' x='25' y='347'>alice_wonder</text>
+  <text class='label' x='25' y='347'>alice_w</text>
   <text class='label' x='85' y='347' font-size='10'>European...</text>
   <text class='label' x='175' y='347' font-size='10'>Mar 18</text>
   <text class='label' x='245' y='347' font-size='10'>20</text>
@@ -89,13 +89,12 @@
 
   <!-- View Details Info -->
   <rect x='15' y='450' width='345' height='100' fill='#F9F9F9' stroke='#EEEEEE' stroke-width='1' rx='4'/>
-  <text class='label' x='25' y='475' font-size='11' font-weight='bold'>💡 Click a row to view</text>
-  <text class='label' x='25' y='495' font-size='11'>detailed submission data including:</text>
-  <text class='label' x='25' y='515' font-size='10'>• Original submitted text</text>
-  <text class='label' x='25' y='530' font-size='10'>• Extracted entities & confidence scores</text>
-  <text class='label' x='25' y='545' font-size='10'>• Extraction method details</text>
+  <text class='label' x='25' y='475' font-size='11' font-weight='bold'>Click a row to view</text>
+  <text class='label' x='25' y='495' font-size='11'>detailed submission data</text>
+  <text class='label' x='25' y='515' font-size='10'>Text, entities, confidence</text>
+  <text class='label' x='25' y='530' font-size='10'>scores and methods</text>
 
   <!-- View Submission Button -->
   <rect class='button' x='25' y='570' width='325' height='45' rx='4'/>
-  <text class='button-text' x='187.5' y='598' text-anchor='middle'>View Selected Submission</text>
+  <text class='button-text' x='187.5' y='598' text-anchor='middle'>View Submission</text>
 </svg>
