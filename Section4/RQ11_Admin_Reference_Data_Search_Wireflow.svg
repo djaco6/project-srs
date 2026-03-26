@@ -1,0 +1,85 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1400' height='800' viewBox='0 0 1400 800'>
+  <defs>
+    <style>
+      .state-box { stroke: #333; stroke-width: 2; rx: 8; }
+      .state-search { fill: #B3E5FC; }
+      .state-results { fill: #C8E6C9; }
+      .state-detail { fill: #FFE0B2; }
+      .state-empty { fill: #FFCCCC; }
+      .arrow { fill: none; stroke: #333; stroke-width: 2.5; marker-end: url(#arrowhead); }
+      .arrow-label { font-family: Arial; font-size: 11px; fill: #333; font-weight: bold; }
+      .state-title { font-family: Arial; font-size: 14px; font-weight: bold; fill: #000; }
+      .state-content { font-family: Arial; font-size: 10px; fill: #333; }
+    </style>
+    <marker id='arrowhead' markerWidth='10' markerHeight='10' refX='9' refY='3' orient='auto'>
+      <polygon points='0 0, 10 3, 0 6' fill='#333' />
+    </marker>
+  </defs>
+  <rect class='state-box state-search' x='30' y='50' width='380' height='180' rx='8'/>
+  <text class='state-title' x='220' y='80' text-anchor='middle'>Reference Data Tab</text>
+  <text class='state-content' x='40' y='105'>ADMIN FUNCTION:</text>
+  <text class='state-content' x='50' y='125'>Audit population records</text>
+  <rect x='40' y='145' width='360' height='30' fill='#FFF' stroke='#333' stroke-width='1' rx='4'/>
+  <text class='state-content' x='50' y='167'>Search city or region name...</text>
+  <text class='state-content' x='40' y='195'>Example: Type "Paris"</text>
+  <path class='arrow' d='M 410 140 Q 495 100 580 140'/>
+  <text class='arrow-label' x='440' y='85'>USER ACTION:</text>
+  <text class='arrow-label' x='440' y='103'>Type "Paris"</text>
+  <text class='arrow-label' x='440' y='121'>Press Enter</text>
+  <rect class='state-box state-results' x='580' y='50' width='800' height='280' rx='8'/>
+  <text class='state-title' x='980' y='80' text-anchor='middle'>Search Results: Paris</text>
+  <rect x='590' y='105' width='780' height='25' fill='#E0E0E0' stroke='#333' stroke-width='1'/>
+  <text class='state-content' x='600' y='125' font-weight='bold'>Year | Population | Lat/Lon | Certainty | Source</text>
+  <rect x='590' y='130' width='780' height='20' fill='#FFF' stroke='#CCC' stroke-width='1'/>
+  <text class='state-content' x='600' y='145'>1750 | 560,000 | 48.8°N/2.3°E | Estimated | Historical Records</text>
+  <rect x='590' y='150' width='780' height='20' fill='#FFFF99' stroke='#FF6B6B' stroke-width='2'/>
+  <text class='state-content' x='600' y='165' font-weight='bold'>1832 * | 775,000 | 48.8°N/2.3°E | Interpolated | Census Estimate</text>
+  <rect x='590' y='170' width='780' height='20' fill='#FFF' stroke='#CCC' stroke-width='1'/>
+  <text class='state-content' x='600' y='185'>1850 | 1,053,262 | 48.8°N/2.3°E | Exact | Census</text>
+  <rect x='590' y='190' width='780' height='20' fill='#FFF' stroke='#CCC' stroke-width='1'/>
+  <text class='state-content' x='600' y='205'>1870 | 1,825,274 | 48.8°N/2.3°E | Exact | Census</text>
+  <rect x='590' y='210' width='780' height='20' fill='#FFF' stroke='#CCC' stroke-width='1'/>
+  <text class='state-content' x='600' y='225'>1890 | 2,270,515 | 48.8°N/2.3°E | Exact | Census</text>
+  <text class='state-content' x='600' y='260'>Grouped by country and sorted by year</text>
+  <text class='state-content' x='600' y='278'>* Asterisk = Interpolated value</text>
+  <path class='arrow' d='M 980 330 Q 980 420 980 500'/>
+  <text class='arrow-label' x='920' y='430'>USER ACTION:</text>
+  <text class='arrow-label' x='920' y='448'>Click a row</text>
+  <rect class='state-box state-detail' x='580' y='500' width='800' height='270' rx='8'/>
+  <text class='state-title' x='980' y='530' text-anchor='middle'>Expanded Row Detail</text>
+  <rect x='590' y='560' width='780' height='30' fill='#E8E8E8' stroke='#CCC' stroke-width='1'/>
+  <text class='state-content' x='600' y='582'>Paris - 1832</text>
+  <rect x='590' y='600' width='480' height='150' fill='#FFFACD' stroke='#CCC' stroke-width='1'/>
+  <text class='state-content' x='600' y='620'>DETAILED INFORMATION:</text>
+  <text class='state-content' x='600' y='640'>• City: Paris</text>
+  <text class='state-content' x='600' y='660'>• Country: France</text>
+  <text class='state-content' x='600' y='680'>• Year: 1832</text>
+  <text class='state-content' x='600' y='700'>• Population: 775,000</text>
+  <text class='state-content' x='600' y='720'>• Certainty: Interpolated</text>
+  <text class='state-content' x='600' y='740'>• Coordinates: 48.8566°N, 2.3522°E</text>
+  <rect x='1080' y='600' width='280' height='150' fill='#E8F0FF' stroke='#CCC' stroke-width='1'/>
+  <text class='state-content' x='1090' y='620'>MINI-MAP:</text>
+  <text class='state-content' x='1100' y='645'>Paris location on map</text>
+  <text class='state-content' x='1100' y='665'>Pin shows coordinates</text>
+  <text class='state-content' x='1100' y='690'>Verified location display</text>
+  <rect class='state-box state-empty' x='30' y='500' width='520' height='270' rx='8'/>
+  <text class='state-title' x='290' y='530' text-anchor='middle'>Empty Search Result</text>
+  <text class='state-content' x='40' y='560'>SEARCH QUERY:</text>
+  <text class='state-content' x='50' y='580'>"Nonexistent City"</text>
+  <rect x='40' y='610' width='500' height='130' fill='#FFEEEE' stroke='#333' stroke-width='1' rx='4'/>
+  <text class='state-content' x='60' y='640'>NO RESULTS FOUND</text>
+  <text class='state-content' x='60' y='665'>Message:</text>
+  <text class='state-content' x='70' y='685'>"No records found for</text>
+  <text class='state-content' x='70' y='705'>'Nonexistent City'. Try</text>
+  <text class='state-content' x='70' y='725'>another search term."</text>
+  <rect class='state-box state-search' x='1050' y='500' width='320' height='270' rx='8'/>
+  <text class='state-title' x='1210' y='530' text-anchor='middle'>Search Features</text>
+  <text class='state-content' x='1060' y='560'>SEARCH ACCEPTS:</text>
+  <text class='state-content' x='1070' y='580'>• City names</text>
+  <text class='state-content' x='1070' y='600'>• Region names</text>
+  <text class='state-content' x='1070' y='620'>• Country names</text>
+  <text class='state-content' x='1060' y='650'>RESULTS SHOW:</text>
+  <text class='state-content' x='1070' y='670'>• All matching records</text>
+  <text class='state-content' x='1070' y='690'>• Grouped by country</text>
+  <text class='state-content' x='1070' y='710'>• Sorted by year</text>
+</svg>

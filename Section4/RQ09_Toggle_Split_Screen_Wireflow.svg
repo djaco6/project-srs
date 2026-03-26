@@ -1,0 +1,94 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1400' height='700' viewBox='0 0 1400 700'>
+  <defs>
+    <style>
+      .state-box { stroke: #333; stroke-width: 2; rx: 8; }
+      .state-split { fill: #B3E5FC; }
+      .state-full { fill: #FFE0B2; }
+      .state-restore { fill: #C8E6C9; }
+      .arrow { fill: none; stroke: #333; stroke-width: 2.5; marker-end: url(#arrowhead); }
+      .arrow-label { font-family: Arial; font-size: 12px; fill: #333; font-weight: bold; }
+      .state-title { font-family: Arial; font-size: 14px; font-weight: bold; fill: #000; }
+      .state-content { font-family: Arial; font-size: 11px; fill: #333; }
+    </style>
+    <marker id='arrowhead' markerWidth='10' markerHeight='10' refX='9' refY='3' orient='auto'>
+      <polygon points='0 0, 10 3, 0 6' fill='#333' />
+    </marker>
+  </defs>
+  <rect class='state-box state-split' x='30' y='50' width='380' height='200' rx='8'/>
+  <text class='state-title' x='220' y='80' text-anchor='middle'>Split Screen - Initial</text>
+  <rect x='40' y='100' width='180' height='130' fill='#FFFACD' stroke='#CCC' stroke-width='1'/>
+  <text class='state-content' x='50' y='120'>TEXT PANE (70%)</text>
+  <text class='state-content' x='50' y='140'>Text content with</text>
+  <text class='state-content' x='50' y='160'>highlights visible</text>
+  <text class='state-content' x='50' y='190'>&lt;&lt; Collapse button</text>
+  <rect x='230' y='100' width='170' height='130' fill='#E8F0FF' stroke='#CCC' stroke-width='1'/>
+  <text class='state-content' x='240' y='120'>SIDEBAR (30%)</text>
+  <text class='state-content' x='240' y='140'>Entity cards</text>
+  <text class='state-content' x='240' y='160'>visible</text>
+  <path class='arrow' d='M 410 150 Q 490 110 570 150'/>
+  <text class='arrow-label' x='440' y='95'>USER ACTION:</text>
+  <text class='arrow-label' x='440' y='113'>Click &lt;&lt; collapse</text>
+  <text class='arrow-label' x='440' y='131'>button</text>
+  <rect class='state-box state-full' x='570' y='50' width='380' height='200' rx='8'/>
+  <text class='state-title' x='760' y='80' text-anchor='middle'>Full Width - Collapsed</text>
+  <rect x='580' y='100' width='350' height='130' fill='#FFFACD' stroke='#CCC' stroke-width='1'/>
+  <text class='state-content' x='590' y='120'>TEXT PANE (100%)</text>
+  <text class='state-content' x='590' y='140'>Full-width reading</text>
+  <text class='state-content' x='590' y='160'>mode - more space</text>
+  <text class='state-content' x='590' y='180'>for text content</text>
+  <rect x='920' y='100' width='25' height='130' fill='#FFD700' stroke='#333' stroke-width='2'/>
+  <text class='state-content' x='923' y='165'>&gt;&gt;</text>
+  <path class='arrow' d='M 950 150 Q 1030 110 1110 150'/>
+  <text class='arrow-label' x='990' y='95'>USER ACTION:</text>
+  <text class='arrow-label' x='990' y='113'>Click &gt;&gt; tab</text>
+  <rect class='state-box state-restore' x='1110' y='50' width='280' height='200' rx='8'/>
+  <text class='state-title' x='1250' y='80' text-anchor='middle'>Restored Split</text>
+  <rect x='1120' y='100' width='170' height='130' fill='#FFFACD' stroke='#CCC' stroke-width='1'/>
+  <text class='state-content' x='1130' y='125'>TEXT</text>
+  <text class='state-content' x='1130' y='145'>Scroll preserved</text>
+  <rect x='1300' y='100' width='80' height='130' fill='#E8F0FF' stroke='#CCC' stroke-width='1'/>
+  <text class='state-content' x='1310' y='125'>SIDE</text>
+  <text class='state-content' x='1310' y='145'>bar</text>
+  <rect class='state-box state-split' x='30' y='320' width='420' height='340' rx='8'/>
+  <text class='state-title' x='240' y='350' text-anchor='middle'>Split Screen State Details</text>
+  <text class='state-content' x='40' y='380'>INITIAL LAYOUT:</text>
+  <text class='state-content' x='50' y='400'>• Left: Text pane (70%)</text>
+  <text class='state-content' x='50' y='420'>• Right: Sidebar (30%)</text>
+  <text class='state-content' x='40' y='450'>COLLAPSE BUTTON:</text>
+  <text class='state-content' x='50' y='470'>• Location: Top-right of sidebar</text>
+  <text class='state-content' x='50' y='490'>• Icon: &lt;&lt; (chevron left)</text>
+  <text class='state-content' x='50' y='510'>• Tooltip: "Collapse sidebar"</text>
+  <text class='state-content' x='40' y='540'>CONTENT VISIBLE:</text>
+  <text class='state-content' x='50' y='560'>• Text with highlights</text>
+  <text class='state-content' x='50' y='580'>• Entity cards in sidebar</text>
+  <text class='state-content' x='50' y='600'>• Scroll position maintained</text>
+  <text class='state-content' x='50' y='620'>• Both panes interactive</text>
+  <rect class='state-box state-full' x='490' y='320' width='420' height='340' rx='8'/>
+  <text class='state-title' x='700' y='350' text-anchor='middle'>Full Width State Details</text>
+  <text class='state-content' x='500' y='380'>FULL WIDTH MODE:</text>
+  <text class='state-content' x='510' y='400'>• Text pane expands 100%</text>
+  <text class='state-content' x='510' y='420'>• Sidebar hidden completely</text>
+  <text class='state-content' x='510' y='440'>• More focus on reading</text>
+  <text class='state-content' x='500' y='470'>EXPAND TAB:</text>
+  <text class='state-content' x='510' y='490'>• Location: Right edge</text>
+  <text class='state-content' x='510' y='510'>• Icon: &gt;&gt; (chevron right)</text>
+  <text class='state-content' x='510' y='530'>• Tooltip: "Expand sidebar"</text>
+  <text class='state-content' x='510' y='550'>• Tab stays always visible</text>
+  <text class='state-content' x='500' y='580'>SCROLL STATE:</text>
+  <text class='state-content' x='510' y='600'>• Position is SAVED</text>
+  <text class='state-content' x='510' y='620'>• Returns to same spot</text>
+  <rect class='state-box state-restore' x='950' y='320' width='420' height='340' rx='8'/>
+  <text class='state-title' x='1160' y='350' text-anchor='middle'>Restored State Details</text>
+  <text class='state-content' x='960' y='380'>RESTORATION:</text>
+  <text class='state-content' x='970' y='400'>• Sidebar slides back in</text>
+  <text class='state-content' x='970' y='420'>• Split layout restored</text>
+  <text class='state-content' x='970' y='440'>• Smooth animation</text>
+  <text class='state-content' x='970' y='460'>• ~300ms transition time</text>
+  <text class='state-content' x='960' y='490'>SCROLL PRESERVATION:</text>
+  <text class='state-content' x='970' y='510'>• Text scroll position kept</text>
+  <text class='state-content' x='970' y='530'>• Sidebar scroll preserved</text>
+  <text class='state-content' x='970' y='550'>• User doesn't lose place</text>
+  <text class='state-content' x='960' y='580'>KEYBOARD SHORTCUT:</text>
+  <text class='state-content' x='970' y='600'>• Hotkey: Ctrl+B or Cmd+B</text>
+  <text class='state-content' x='970' y='620'>• Toggle sidebar on/off</text>
+</svg>

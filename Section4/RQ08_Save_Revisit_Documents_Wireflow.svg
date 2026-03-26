@@ -1,0 +1,82 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='650' viewBox='0 0 1200 650'>
+  <defs>
+    <style>
+      .state-box { stroke: #333; stroke-width: 2; rx: 8; }
+      .state-input { fill: #B3E5FC; }
+      .state-processing { fill: #FFE0B2; }
+      .state-result { fill: #C8E6C9; }
+      .arrow { fill: none; stroke: #333; stroke-width: 2.5; marker-end: url(#arrowhead); }
+      .arrow-label { font-family: Arial; font-size: 12px; fill: #333; font-weight: bold; }
+      .state-title { font-family: Arial; font-size: 15px; font-weight: bold; fill: #000; }
+      .state-content { font-family: Arial; font-size: 11px; fill: #333; }
+    </style>
+    <marker id='arrowhead' markerWidth='10' markerHeight='10' refX='9' refY='3' orient='auto'>
+      <polygon points='0 0, 10 3, 0 6' fill='#333' />
+    </marker>
+  </defs>
+  <rect class='state-box state-input' x='30' y='50' width='260' height='150' rx='8'/>
+  <text class='state-title' x='160' y='80' text-anchor='middle'>Reader View</text>
+  <text class='state-content' x='40' y='105'>• Analysis complete</text>
+  <text class='state-content' x='40' y='125'>• Auto-saving in background</text>
+  <text class='state-content' x='40' y='145'>• Document saved to DB</text>
+  <text class='state-content' x='40' y='165'>• No manual save needed</text>
+  <path class='arrow' d='M 290 125 Q 360 95 430 125'/>
+  <text class='arrow-label' x='320' y='80'>USER ACTION:</text>
+  <text class='arrow-label' x='320' y='98'>Click "My Documents"</text>
+  <rect class='state-box state-result' x='430' y='50' width='300' height='150' rx='8'/>
+  <text class='state-title' x='580' y='80' text-anchor='middle'>Document Dashboard</text>
+  <text class='state-content' x='440' y='105'>• New document card appears</text>
+  <text class='state-content' x='440' y='125'>• Auto-generated title</text>
+  <text class='state-content' x='440' y='145'>• Date, entity count, thumbnail</text>
+  <text class='state-content' x='440' y='165'>• Ready to click to reopen</text>
+  <path class='arrow' d='M 730 125 Q 800 95 870 125'/>
+  <text class='arrow-label' x='760' y='80'>USER ACTION:</text>
+  <text class='arrow-label' x='760' y='98'>Click document card</text>
+  <rect class='state-box state-result' x='870' y='50' width='300' height='150' rx='8'/>
+  <text class='state-title' x='1020' y='80' text-anchor='middle'>Reader View - Restored</text>
+  <text class='state-content' x='880' y='105'>• All highlights restored</text>
+  <text class='state-content' x='880' y='125'>• Annotations visible</text>
+  <text class='state-content' x='880' y='145'>• Map state preserved</text>
+  <text class='state-content' x='880' y='165'>• Scroll position remembered</text>
+  <rect class='state-box state-input' x='30' y='280' width='350' height='330' rx='8'/>
+  <text class='state-title' x='205' y='310' text-anchor='middle'>Document Card Display</text>
+  <text class='state-content' x='40' y='340'>CARD LAYOUT:</text>
+  <text class='state-content' x='50' y='360'>┌─────────────────────┐</text>
+  <text class='state-content' x='50' y='380'>│ History of Paris    │</text>
+  <text class='state-content' x='50' y='400'>│ Date: 2026-03-25    │</text>
+  <text class='state-content' x='50' y='420'>│ Entities: 12        │</text>
+  <text class='state-content' x='50' y='440'>│                     │</text>
+  <text class='state-content' x='50' y='460'>│  [Map Thumbnail]    │</text>
+  <text class='state-content' x='50' y='480'>│                     │</text>
+  <text class='state-content' x='50' y='500'>└─────────────────────┘</text>
+  <text class='state-content' x='40' y='530'>METADATA:</text>
+  <text class='state-content' x='50' y='550'>• Title: Auto-generated or custom</text>
+  <text class='state-content' x='50' y='570'>• Date: When created</text>
+  <text class='state-content' x='50' y='590'>• Entity Count: Locations + Dates</text>
+  <rect class='state-box state-processing' x='430' y='280' width='350' height='330' rx='8'/>
+  <text class='state-title' x='605' y='310' text-anchor='middle'>Auto-Save Behavior</text>
+  <text class='state-content' x='440' y='340'>WHEN SAVED:</text>
+  <text class='state-content' x='450' y='360'>✓ Analysis completes</text>
+  <text class='state-content' x='450' y='380'>✓ Document immediately saved</text>
+  <text class='state-content' x='450' y='400'>✓ No user action required</text>
+  <text class='state-content' x='440' y='430'>WHAT'S STORED:</text>
+  <text class='state-content' x='450' y='450'>• Original text</text>
+  <text class='state-content' x='450' y='470'>• Extracted entities</text>
+  <text class='state-content' x='450' y='490'>• Highlights & annotations</text>
+  <text class='state-content' x='450' y='510'>• Map state (zoom, center)</text>
+  <text class='state-content' x='450' y='530'>• User who submitted</text>
+  <text class='state-content' x='450' y='550'>• Timestamp</text>
+  <rect class='state-box state-input' x='830' y='280' width='340' height='330' rx='8'/>
+  <text class='state-title' x='1000' y='310' text-anchor='middle'>Not Logged In Case</text>
+  <text class='state-content' x='840' y='340'>AFTER ANALYSIS:</text>
+  <text class='state-content' x='850' y='360'>1. User sees Reader View</text>
+  <text class='state-content' x='850' y='380'>2. Banner appears:</text>
+  <text class='state-content' x='850' y='400'>"Sign up to save this"</text>
+  <text class='state-content' x='850' y='420'>"document"</text>
+  <text class='state-content' x='840' y='450'>USER OPTIONS:</text>
+  <text class='state-content' x='850' y='470'>• Click "Register" button</text>
+  <text class='state-content' x='850' y='490'>• Click "Log In" button</text>
+  <text class='state-content' x='850' y='510'>• Continue viewing without</text>
+  <text class='state-content' x='850' y='530'>  saving (document lost</text>
+  <text class='state-content' x='850' y='550'>  when navigate away)</text>
+</svg>
