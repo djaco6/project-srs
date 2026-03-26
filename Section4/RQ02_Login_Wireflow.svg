@@ -1,0 +1,53 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='600' viewBox='0 0 1200 600'>
+  <defs>
+    <style>
+      .state-box { stroke: #333; stroke-width: 2; rx: 8; }
+      .state-login { fill: #B3E5FC; }
+      .state-validating { fill: #FFE0B2; }
+      .state-dashboard { fill: #C8E6C9; }
+      .state-error { fill: #FFCCCC; }
+      .arrow { fill: none; stroke: #333; stroke-width: 2.5; marker-end: url(#arrowhead); }
+      .arrow-error { fill: none; stroke: #CC0000; stroke-width: 2.5; marker-end: url(#arrowhead-error); stroke-dasharray: 5,5; }
+      .arrow-label { font-family: Arial; font-size: 12px; fill: #333; font-weight: bold; }
+      .state-title { font-family: Arial; font-size: 16px; font-weight: bold; fill: #000; }
+      .state-content { font-family: Arial; font-size: 12px; fill: #333; }
+    </style>
+    <marker id='arrowhead' markerWidth='10' markerHeight='10' refX='9' refY='3' orient='auto'>
+      <polygon points='0 0, 10 3, 0 6' fill='#333' />
+    </marker>
+    <marker id='arrowhead-error' markerWidth='10' markerHeight='10' refX='9' refY='3' orient='auto'>
+      <polygon points='0 0, 10 3, 0 6' fill='#CC0000' />
+    </marker>
+  </defs>
+  <rect class='state-box state-login' x='50' y='80' width='200' height='140' rx='8'/>
+  <text class='state-title' x='150' y='110' text-anchor='middle'>Login Screen</text>
+  <text class='state-content' x='60' y='135'>• Email input field</text>
+  <text class='state-content' x='60' y='160'>• Password input field</text>
+  <text class='state-content' x='60' y='185'>• "Log In" button</text>
+  <path class='arrow' d='M 250 150 Q 325 120 400 150'/>
+  <text class='arrow-label' x='285' y='110'>USER ACTION:</text>
+  <text class='arrow-label' x='285' y='128'>Enter email &</text>
+  <text class='arrow-label' x='285' y='146'>password, click Log In</text>
+  <rect class='state-box state-validating' x='400' y='80' width='200' height='140' rx='8'/>
+  <text class='state-title' x='500' y='110' text-anchor='middle'>Validating Credentials</text>
+  <text class='state-content' x='410' y='135'>• Loading spinner</text>
+  <text class='state-content' x='410' y='160'>• Devise authenticates</text>
+  <text class='state-content' x='410' y='185'>• Session created</text>
+  <path class='arrow' d='M 600 150 Q 675 120 750 150'/>
+  <text class='arrow-label' x='635' y='110'>SYSTEM RESPONSE:</text>
+  <text class='arrow-label' x='635' y='128'>Credentials valid</text>
+  <path class='arrow-error' d='M 500 220 Q 500 280 500 360'/>
+  <text class='arrow-label' x='430' y='300' fill='#CC0000'>SYSTEM RESPONSE:</text>
+  <text class='arrow-label' x='430' y='318' fill='#CC0000'>Invalid credentials</text>
+  <rect class='state-box state-dashboard' x='750' y='80' width='300' height='140' rx='8'/>
+  <text class='state-title' x='900' y='110' text-anchor='middle'>Document Dashboard</text>
+  <text class='state-content' x='760' y='135'>• Previously saved documents visible</text>
+  <text class='state-content' x='760' y='160'>• Document cards with metadata</text>
+  <text class='state-content' x='760' y='185'>• User logged in (name in header)</text>
+  <rect class='state-box state-error' x='350' y='360' width='300' height='120' rx='8'/>
+  <text class='state-title' x='500' y='390' text-anchor='middle'>Login Error</text>
+  <text class='state-content' x='360' y='415'>• Error message: "Invalid email or password"</text>
+  <text class='state-content' x='360' y='440'>• User redirected back to Login Screen</text>
+  <path class='arrow-error' d='M 350 420 Q 250 400 150 220'/>
+  <text class='arrow-label' x='220' y='330' fill='#CC0000'>Return to Login</text>
+</svg>

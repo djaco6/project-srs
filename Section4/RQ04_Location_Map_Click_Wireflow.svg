@@ -1,0 +1,76 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1400' height='650' viewBox='0 0 1400 650'>
+  <defs>
+    <style>
+      .state-box { stroke: #333; stroke-width: 2; rx: 8; }
+      .state-view { fill: #B3E5FC; }
+      .state-map { fill: #FFE0B2; }
+      .state-highlight { fill: #C8E6C9; }
+      .arrow { fill: none; stroke: #333; stroke-width: 2.5; marker-end: url(#arrowhead); }
+      .arrow-label { font-family: Arial; font-size: 12px; fill: #333; font-weight: bold; }
+      .state-title { font-family: Arial; font-size: 15px; font-weight: bold; fill: #000; }
+      .state-content { font-family: Arial; font-size: 11px; fill: #333; }
+    </style>
+    <marker id='arrowhead' markerWidth='10' markerHeight='10' refX='9' refY='3' orient='auto'>
+      <polygon points='0 0, 10 3, 0 6' fill='#333' />
+    </marker>
+  </defs>
+  <rect class='state-box state-view' x='30' y='50' width='280' height='180' rx='8'/>
+  <text class='state-title' x='170' y='80' text-anchor='middle'>Reader View - Text</text>
+  <text class='state-content' x='40' y='105'>• Historical text displayed</text>
+  <text class='state-content' x='40' y='125'>• Location names highlighted</text>
+  <text class='state-content' x='40' y='145'>  (as clickable links)</text>
+  <text class='state-content' x='40' y='165'>• Example: "Paris" in blue</text>
+  <text class='state-content' x='40' y='185'>• "Lyon" also highlighted</text>
+  <text class='state-content' x='40' y='205'>• Ready for interaction</text>
+  <path class='arrow' d='M 310 140 Q 410 90 510 140'/>
+  <text class='arrow-label' x='360' y='75'>USER ACTION:</text>
+  <text class='arrow-label' x='360' y='93'>Click highlighted</text>
+  <text class='arrow-label' x='360' y='111'>"Paris" text</text>
+  <rect class='state-box state-map' x='510' y='50' width='280' height='180' rx='8'/>
+  <text class='state-title' x='650' y='80' text-anchor='middle'>Map - Animating</text>
+  <text class='state-content' x='520' y='105'>• Map pans to Paris</text>
+  <text class='state-content' x='520' y='125'>• Smooth zoom transition</text>
+  <text class='state-content' x='520' y='145'>• Paris pin comes into focus</text>
+  <text class='state-content' x='520' y='165'>• Pin pulses (animation)</text>
+  <text class='state-content' x='520' y='185'>• Brief visual confirmation</text>
+  <text class='state-content' x='520' y='205'>• ~300ms animation time</text>
+  <path class='arrow' d='M 790 140 Q 890 90 990 140'/>
+  <text class='arrow-label' x='850' y='75'>SYSTEM RESPONSE:</text>
+  <text class='arrow-label' x='850' y='93'>Animation completes</text>
+  <rect class='state-box state-highlight' x='990' y='50' width='360' height='180' rx='8'/>
+  <text class='state-title' x='1170' y='80' text-anchor='middle'>Map Centered on Paris</text>
+  <text class='state-content' x='1000' y='105'>• Map centered on Paris</text>
+  <text class='state-content' x='1000' y='125'>• Latitude: 48.8566°N</text>
+  <text class='state-content' x='1000' y='145'>• Longitude: 2.3522°E</text>
+  <text class='state-content' x='1000' y='165'>• Pin highlighted with glow</text>
+  <text class='state-content' x='1000' y='185'>• Sidebar scrolls to Paris card</text>
+  <text class='state-content' x='1000' y='205'>• Paris card is highlighted</text>
+  <rect class='state-box state-highlight' x='30' y='300' width='280' height='200' rx='8'/>
+  <text class='state-title' x='170' y='330' text-anchor='middle'>Sidebar - Paris Card</text>
+  <text class='state-content' x='40' y='355'>TITLE: Paris (1832)</text>
+  <text class='state-content' x='40' y='375'>City Population:</text>
+  <text class='state-content' x='40' y='390'>~775,000 (estimated)</text>
+  <text class='state-content' x='40' y='410'>Regional (France):</text>
+  <text class='state-content' x='40' y='425'>~32.6 million</text>
+  <text class='state-content' x='40' y='445'>Distance info & travel times</text>
+  <text class='state-content' x='40' y='465'>visible for comparison</text>
+  <rect class='state-box state-view' x='360' y='300' width='280' height='200' rx='8'/>
+  <text class='state-title' x='500' y='330' text-anchor='middle'>User Options</text>
+  <text class='state-content' x='370' y='355'>• Click another location</text>
+  <text class='state-content' x='370' y='375'>  → Map shifts to new location</text>
+  <text class='state-content' x='370' y='395'>• Click same location again</text>
+  <text class='state-content' x='370' y='415'>  → Deselects, map resets</text>
+  <text class='state-content' x='370' y='435'>• Scroll sidebar</text>
+  <text class='state-content' x='370' y='455'>  → View other location cards</text>
+  <rect class='state-box state-highlight' x='690' y='300' width='280' height='200' rx='8'/>
+  <text class='state-title' x='830' y='330' text-anchor='middle'>Expand Card Option</text>
+  <text class='state-content' x='700' y='355'>• Paris card visible</text>
+  <text class='state-content' x='700' y='375'>• Click card to expand</text>
+  <text class='state-content' x='700' y='395'>  → Show full details</text>
+  <text class='state-content' x='700' y='415'>  → Population history</text>
+  <text class='state-content' x='700' y='435'>• Click "View Full History"</text>
+  <text class='state-content' x='700' y='455'>  → Opens history panel (RQ07)</text>
+  <path class='arrow' d='M 650 230 Q 650 260 170 300'/>
+  <text class='arrow-label' x='620' y='265'>Sidebar scrolls to</text>
+  <text class='arrow-label' x='620' y='283'>highlighted card</text>
+</svg>

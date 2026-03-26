@@ -1,0 +1,84 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1400' height='700' viewBox='0 0 1400 700'>
+  <defs>
+    <style>
+      .state-box { stroke: #333; stroke-width: 2; rx: 8; }
+      .state-input { fill: #B3E5FC; }
+      .state-processing { fill: #FFE0B2; }
+      .state-result { fill: #C8E6C9; }
+      .state-error { fill: #FFCCCC; }
+      .arrow { fill: none; stroke: #333; stroke-width: 2.5; marker-end: url(#arrowhead); }
+      .arrow-error { fill: none; stroke: #CC0000; stroke-width: 2.5; marker-end: url(#arrowhead-error); stroke-dasharray: 5,5; }
+      .arrow-label { font-family: Arial; font-size: 11px; fill: #333; font-weight: bold; }
+      .state-title { font-family: Arial; font-size: 14px; font-weight: bold; fill: #000; }
+      .state-content { font-family: Arial; font-size: 11px; fill: #333; }
+    </style>
+    <marker id='arrowhead' markerWidth='10' markerHeight='10' refX='9' refY='3' orient='auto'>
+      <polygon points='0 0, 10 3, 0 6' fill='#333' />
+    </marker>
+    <marker id='arrowhead-error' markerWidth='10' markerHeight='10' refX='9' refY='3' orient='auto'>
+      <polygon points='0 0, 10 3, 0 6' fill='#CC0000' />
+    </marker>
+  </defs>
+  <rect class='state-box state-input' x='30' y='50' width='220' height='150' rx='8'/>
+  <text class='state-title' x='140' y='80' text-anchor='middle'>New Document Screen</text>
+  <text class='state-content' x='40' y='105'>• Empty text area</text>
+  <text class='state-content' x='40' y='125'>• "Analyze" button disabled</text>
+  <text class='state-content' x='40' y='145'>• User logged in</text>
+  <text class='state-content' x='40' y='165'>• Ready for text input</text>
+  <path class='arrow' d='M 250 125 Q 310 95 370 125'/>
+  <text class='arrow-label' x='280' y='85'>USER ACTION:</text>
+  <text class='arrow-label' x='280' y='103'>Paste text block</text>
+  <rect class='state-box state-input' x='370' y='50' width='220' height='150' rx='8'/>
+  <text class='state-title' x='480' y='80' text-anchor='middle'>Document Input</text>
+  <text class='state-content' x='380' y='105'>• Text in textarea</text>
+  <text class='state-content' x='380' y='125'>• "Analyze" button ENABLED</text>
+  <text class='state-content' x='380' y='145'>• Character count displayed</text>
+  <text class='state-content' x='380' y='165'>• Ready to submit</text>
+  <path class='arrow' d='M 590 125 Q 650 95 710 125'/>
+  <text class='arrow-label' x='630' y='85'>USER ACTION:</text>
+  <text class='arrow-label' x='630' y='103'>Click "Analyze"</text>
+  <rect class='state-box state-processing' x='710' y='50' width='220' height='150' rx='8'/>
+  <text class='state-title' x='820' y='80' text-anchor='middle'>Processing Screen</text>
+  <text class='state-content' x='720' y='105'>• Progress spinner visible</text>
+  <text class='state-content' x='720' y='125'>• "Extracting entities..."</text>
+  <text class='state-content' x='720' y='145'>• Backend processing</text>
+  <text class='state-content' x='720' y='165'>• Cancel button available</text>
+  <path class='arrow' d='M 930 125 Q 990 95 1050 125'/>
+  <text class='arrow-label' x='960' y='85'>SYSTEM RESPONSE:</text>
+  <text class='arrow-label' x='960' y='103'>Entities extracted</text>
+  <text class='arrow-label' x='960' y='121'>successfully</text>
+  <rect class='state-box state-result' x='1050' y='50' width='320' height='150' rx='8'/>
+  <text class='state-title' x='1210' y='80' text-anchor='middle'>Reader View - Success</text>
+  <text class='state-content' x='1060' y='105'>• Text with highlights</text>
+  <text class='state-content' x='1060' y='125'>• Locations highlighted in blue</text>
+  <text class='state-content' x='1060' y='145'>• Dates highlighted in orange</text>
+  <text class='state-content' x='1060' y='165'>• Sidebar cards visible</text>
+  <rect class='state-box state-error' x='30' y='280' width='240' height='150' rx='8'/>
+  <text class='state-title' x='150' y='310' text-anchor='middle'>Edge Case: Empty Text</text>
+  <text class='state-content' x='40' y='335'>• User tries to submit empty</text>
+  <text class='state-content' x='40' y='355'>  textarea</text>
+  <text class='state-content' x='40' y='375'>• "Analyze" button remains</text>
+  <text class='state-content' x='40' y='395'>  disabled</text>
+  <text class='state-content' x='40' y='415'>• Tooltip: "Please paste</text>
+  <text class='state-content' x='40' y='430'>  text first"</text>
+  <rect class='state-box state-result' x='330' y='280' width='240' height='150' rx='8'/>
+  <text class='state-title' x='450' y='310' text-anchor='middle'>Edge Case: No Entities</text>
+  <text class='state-content' x='340' y='335'>• Text processed successfully</text>
+  <text class='state-content' x='340' y='355'>• No locations/dates found</text>
+  <text class='state-content' x='340' y='375'>• Reader View loads</text>
+  <text class='state-content' x='340' y='395'>• Sidebar displays:</text>
+  <text class='state-content' x='340' y='415'>  "No locations or dates</text>
+  <text class='state-content' x='340' y='430'>  found in this text"</text>
+  <rect class='state-box state-error' x='630' y='280' width='240' height='150' rx='8'/>
+  <text class='state-title' x='750' y='310' text-anchor='middle'>Edge Case: Text Too Long</text>
+  <text class='state-content' x='640' y='335'>• User pastes >50,000 chars</text>
+  <text class='state-content' x='640' y='355'>• Processing initiated</text>
+  <text class='state-content' x='640' y='375'>• Error returned from backend</text>
+  <text class='state-content' x='640' y='395'>• Error banner displayed:</text>
+  <text class='state-content' x='640' y='415'>  "Text is too long —</text>
+  <text class='state-content' x='640' y='430'>  maximum 50,000 chars"</text>
+  <path class='arrow-error' d='M 800 200 Q 800 240 750 280'/>
+  <text class='arrow-label' x='720' y='245' fill='#CC0000'>No entities</text>
+  <path class='arrow-error' d='M 850 200 Q 850 240 750 280'/>
+  <text class='arrow-label' x='820' y='245' fill='#CC0000'>Text too long</text>
+</svg>

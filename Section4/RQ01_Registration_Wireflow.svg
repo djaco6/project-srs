@@ -1,0 +1,51 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='600' viewBox='0 0 1200 600'>
+  <defs>
+    <style>
+      .state-box { stroke: #333; stroke-width: 2; rx: 8; }
+      .state-landing { fill: #B3E5FC; }
+      .state-form { fill: #C8E6C9; }
+      .state-processing { fill: #FFE0B2; }
+      .state-success { fill: #C8E6C9; }
+      .arrow { fill: none; stroke: #333; stroke-width: 2.5; marker-end: url(#arrowhead); }
+      .arrow-label { font-family: Arial; font-size: 12px; fill: #333; font-weight: bold; }
+      .state-title { font-family: Arial; font-size: 16px; font-weight: bold; fill: #000; }
+      .state-content { font-family: Arial; font-size: 12px; fill: #333; }
+    </style>
+    <marker id='arrowhead' markerWidth='10' markerHeight='10' refX='9' refY='3' orient='auto'>
+      <polygon points='0 0, 10 3, 0 6' fill='#333' />
+    </marker>
+  </defs>
+  <rect class='state-box state-landing' x='50' y='80' width='200' height='140' rx='8'/>
+  <text class='state-title' x='150' y='110' text-anchor='middle'>Landing Page</text>
+  <text class='state-content' x='60' y='135'>• Not logged in</text>
+  <text class='state-content' x='60' y='160'>• Sign Up button visible</text>
+  <text class='state-content' x='60' y='185'>• Navigation bar present</text>
+  <path class='arrow' d='M 250 150 Q 325 120 400 150'/>
+  <text class='arrow-label' x='310' y='110'>USER ACTION:</text>
+  <text class='arrow-label' x='310' y='128'>Click "Sign Up"</text>
+  <rect class='state-box state-form' x='400' y='80' width='200' height='140' rx='8'/>
+  <text class='state-title' x='500' y='110' text-anchor='middle'>Registration Form</text>
+  <text class='state-content' x='410' y='135'>• Email input field</text>
+  <text class='state-content' x='410' y='160'>• Password input field</text>
+  <text class='state-content' x='410' y='185'>• "Create Account" button</text>
+  <path class='arrow' d='M 600 150 Q 675 120 750 150'/>
+  <text class='arrow-label' x='640' y='110'>USER ACTION:</text>
+  <text class='arrow-label' x='640' y='128'>Submit valid email</text>
+  <text class='arrow-label' x='640' y='146'>& password</text>
+  <rect class='state-box state-processing' x='750' y='80' width='200' height='140' rx='8'/>
+  <text class='state-title' x='850' y='110' text-anchor='middle'>Processing Spinner</text>
+  <text class='state-content' x='760' y='135'>• Loading indicator</text>
+  <text class='state-content' x='760' y='160'>• Devise creating account</text>
+  <text class='state-content' x='760' y='185'>• Button disabled</text>
+  <path class='arrow' d='M 850 220 L 850 300'/>
+  <text class='arrow-label' x='780' y='265'>SYSTEM RESPONSE:</text>
+  <text class='arrow-label' x='780' y='283'>Account created</text>
+  <text class='arrow-label' x='780' y='301'>successfully</text>
+  <rect class='state-box state-success' x='700' y='300' width='300' height='160' rx='8'/>
+  <text class='state-title' x='850' y='330' text-anchor='middle'>Document Dashboard</text>
+  <text class='state-content' x='710' y='355'>• Empty document grid</text>
+  <text class='state-content' x='710' y='380'>• Welcome banner: "Welcome to Alexandria!"</text>
+  <text class='state-content' x='710' y='405'>• New Document button visible</text>
+  <text class='state-content' x='710' y='430'>• User is logged in</text>
+  <text class='state-content' x='710' y='455'>• Ready to analyze documents</text>
+</svg>

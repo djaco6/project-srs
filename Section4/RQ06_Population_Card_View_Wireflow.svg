@@ -1,0 +1,86 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='700' viewBox='0 0 1200 700'>
+  <defs>
+    <style>
+      .state-box { stroke: #333; stroke-width: 2; rx: 8; }
+      .state-collapsed { fill: #B3E5FC; }
+      .state-expanded { fill: #C8E6C9; }
+      .state-history { fill: #FFE0B2; }
+      .arrow { fill: none; stroke: #333; stroke-width: 2.5; marker-end: url(#arrowhead); }
+      .arrow-label { font-family: Arial; font-size: 11px; fill: #333; font-weight: bold; }
+      .state-title { font-family: Arial; font-size: 14px; font-weight: bold; fill: #000; }
+      .state-content { font-family: Arial; font-size: 10px; fill: #333; }
+    </style>
+    <marker id='arrowhead' markerWidth='10' markerHeight='10' refX='9' refY='3' orient='auto'>
+      <polygon points='0 0, 10 3, 0 6' fill='#333' />
+    </marker>
+  </defs>
+  <rect class='state-box state-collapsed' x='50' y='50' width='260' height='130' rx='8'/>
+  <text class='state-title' x='180' y='80' text-anchor='middle'>Sidebar - Collapsed Card</text>
+  <text class='state-content' x='60' y='105'>CARD: Paris (1832)</text>
+  <text class='state-content' x='60' y='125'>• Basic info only</text>
+  <text class='state-content' x='60' y='145'>• Clickable</text>
+  <path class='arrow' d='M 310 115 Q 380 85 450 115'/>
+  <text class='arrow-label' x='340' y='70'>USER ACTION:</text>
+  <text class='arrow-label' x='340' y='88'>Click card</text>
+  <rect class='state-box state-expanded' x='450' y='50' width='260' height='180' rx='8'/>
+  <text class='state-title' x='580' y='80' text-anchor='middle'>Expanded Card View</text>
+  <text class='state-content' x='460' y='105'>Paris (1832)</text>
+  <text class='state-content' x='460' y='130'>City Population:</text>
+  <text class='state-content' x='470' y='145'>~775,000 (estimated)</text>
+  <text class='state-content' x='460' y='170'>Regional Population:</text>
+  <text class='state-content' x='470' y='185'>France: ~32.6 million</text>
+  <text class='state-content' x='460' y='210'>Source: Interpolated</text>
+  <path class='arrow' d='M 710 140 Q 780 110 850 140'/>
+  <text class='arrow-label' x='740' y='95'>USER ACTION:</text>
+  <text class='arrow-label' x='740' y='113'>Click "View Full</text>
+  <text class='arrow-label' x='740' y='131'>History" link</text>
+  <rect class='state-box state-history' x='850' y='50' width='320' height='180' rx='8'/>
+  <text class='state-title' x='1010' y='80' text-anchor='middle'>Population History Panel</text>
+  <text class='state-content' x='860' y='105'>Opens modal/panel (RQ07)</text>
+  <text class='state-content' x='860' y='125'>Scrollable table with:</text>
+  <text class='state-content' x='870' y='145'>• All Paris records by year</text>
+  <text class='state-content' x='870' y='165'>• 1832 row highlighted</text>
+  <text class='state-content' x='870' y='185'>• France regional data</text>
+  <rect class='state-box state-collapsed' x='50' y='280' width='380' height='350' rx='8'/>
+  <text class='state-title' x='240' y='310' text-anchor='middle'>Card Interaction States</text>
+  <text class='state-content' x='60' y='340'>COLLAPSED STATE:</text>
+  <text class='state-content' x='70' y='360'>• Shows card title: "Paris (1832)"</text>
+  <text class='state-content' x='70' y='380'>• Minimal data (pop estimate)</text>
+  <text class='state-content' x='70' y='400'>• Chevron icon indicates expandable</text>
+  <text class='state-content' x='70' y='420'>• Hover shows tooltip with summary</text>
+  <text class='state-content' x='60' y='450'>EXPANDED STATE:</text>
+  <text class='state-content' x='70' y='470'>• Full city population</text>
+  <text class='state-content' x='70' y='490'>• Regional population</text>
+  <text class='state-content' x='70' y='510'>• Certainty tier (exact/interpolated)</text>
+  <text class='state-content' x='70' y='530'>• Source citation</text>
+  <text class='state-content' x='70' y='550'>• "View Full History" button</text>
+  <text class='state-content' x='70' y='570'>• Click again to collapse</text>
+  <rect class='state-box state-expanded' x='480' y='280' width='380' height='350' rx='8'/>
+  <text class='state-title' x='670' y='310' text-anchor='middle'>Data Displayed</text>
+  <text class='state-content' x='490' y='340'>CITY POPULATION LINE:</text>
+  <text class='state-content' x='500' y='360'>Paris 1832: ~775,000</text>
+  <text class='state-content' x='500' y='380'>(Interpolated estimate)</text>
+  <text class='state-content' x='500' y='400'>Based on census trend data</text>
+  <text class='state-content' x='490' y='430'>REGIONAL POPULATION:</text>
+  <text class='state-content' x='500' y='450'>France 1832: ~32.6 million</text>
+  <text class='state-content' x='500' y='470'>(Interpolated estimate)</text>
+  <text class='state-content' x='490' y='500'>CERTAINTY INDICATORS:</text>
+  <text class='state-content' x='500' y='520'>* = Interpolated (not exact)</text>
+  <text class='state-content' x='500' y='540'>No asterisk = Census exact</text>
+  <text class='state-content' x='490' y='570'>SOURCE:</text>
+  <text class='state-content' x='500' y='590'>Clickable for full citation</text>
+  <rect class='state-box state-history' x='910' y='280' width='260' height='350' rx='8'/>
+  <text class='state-title' x='1040' y='310' text-anchor='middle'>"View Full History"</text>
+  <text class='state-content' x='920' y='340'>Button Location:</text>
+  <text class='state-content' x='930' y='360'>Bottom of expanded card</text>
+  <text class='state-content' x='920' y='390'>Button Text:</text>
+  <text class='state-content' x='930' y='410'>"View Full History" or</text>
+  <text class='state-content' x='930' y='430'>"Population Timeline"</text>
+  <text class='state-content' x='920' y='460'>Styling:</text>
+  <text class='state-content' x='930' y='480'>• Blue link or button</text>
+  <text class='state-content' x='930' y='500'>• Icon: arrow-right or expand</text>
+  <text class='state-content' x='920' y='530'>Interaction:</text>
+  <text class='state-content' x='930' y='550'>• Opens history panel overlay</text>
+  <text class='state-content' x='930' y='570'>• Scrollable table appears</text>
+  <text class='state-content' x='930' y='590'>• See RQ07 for details</text>
+</svg>

@@ -1,0 +1,106 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1400' height='800' viewBox='0 0 1400 800'>
+  <defs>
+    <style>
+      .state-box { stroke: #333; stroke-width: 2; rx: 8; }
+      .state-card { fill: #B3E5FC; }
+      .state-panel { fill: #C8E6C9; }
+      .state-table { fill: #FFE0B2; }
+      .arrow { fill: none; stroke: #333; stroke-width: 2.5; marker-end: url(#arrowhead); }
+      .arrow-label { font-family: Arial; font-size: 11px; fill: #333; font-weight: bold; }
+      .state-title { font-family: Arial; font-size: 14px; font-weight: bold; fill: #000; }
+      .state-content { font-family: Arial; font-size: 10px; fill: #333; }
+      .table-header { font-weight: bold; font-size: 10px; fill: #000; }
+    </style>
+    <marker id='arrowhead' markerWidth='10' markerHeight='10' refX='9' refY='3' orient='auto'>
+      <polygon points='0 0, 10 3, 0 6' fill='#333' />
+    </marker>
+  </defs>
+  <rect class='state-box state-card' x='30' y='30' width='300' height='180' rx='8'/>
+  <text class='state-title' x='180' y='60' text-anchor='middle'>Expanded Card</text>
+  <text class='state-content' x='40' y='85'>Paris (1832)</text>
+  <text class='state-content' x='40' y='105'>Population: ~775,000</text>
+  <text class='state-content' x='40' y='125'>France: ~32.6 million</text>
+  <text class='state-content' x='40' y='155'>"View Full History"</text>
+  <text class='state-content' x='40' y='175'>← Clickable link/button</text>
+  <path class='arrow' d='M 330 120 Q 410 70 490 120'/>
+  <text class='arrow-label' x='360' y='55'>USER ACTION:</text>
+  <text class='arrow-label' x='360' y='73'>Click "View Full History"</text>
+  <rect class='state-box state-panel' x='490' y='30' width='350' height='180' rx='8'/>
+  <text class='state-title' x='665' y='60' text-anchor='middle'>Population History Panel Opens</text>
+  <text class='state-content' x='500' y='85'>Scrollable modal/panel overlay</text>
+  <text class='state-content' x='500' y='105'>Title: "Paris Population History"</text>
+  <text class='state-content' x='500' y='125'>Close button (X) at top-right</text>
+  <text class='state-content' x='500' y='145'>or press Escape key</text>
+  <text class='state-content' x='500' y='165'>Table contents loading...</text>
+  <path class='arrow' d='M 665 210 Q 665 290 665 360'/>
+  <text class='arrow-label' x='600' y='290'>Panel renders with:</text>
+  <text class='arrow-label' x='600' y='308'>• Scrollable table</text>
+  <text class='arrow-label' x='600' y='326'>• All historical data</text>
+  <rect class='state-box state-table' x='350' y='360' width='630' height='380' rx='8'/>
+  <text class='state-title' x='665' y='390' text-anchor='middle'>Paris Population Table</text>
+  <rect x='360' y='410' width='610' height='25' fill='#E0E0E0' stroke='#333' stroke-width='1'/>
+  <text class='table-header' x='375' y='430'>Year</text>
+  <text class='table-header' x='450' y='430'>Population</text>
+  <text class='table-header' x='580' y='430'>Certainty</text>
+  <text class='table-header' x='720' y='430'>Source</text>
+  <rect x='360' y='435' width='610' height='20' fill='#FFF' stroke='#CCC' stroke-width='1'/>
+  <text class='state-content' x='375' y='450'>1800</text>
+  <text class='state-content' x='450' y='450'>547,856</text>
+  <text class='state-content' x='580' y='450'>Exact</text>
+  <text class='state-content' x='720' y='450'>Census</text>
+  <rect x='360' y='455' width='610' height='20' fill='#FFFF99' stroke='#FF6B6B' stroke-width='2'/>
+  <text class='table-header' x='375' y='470'>1832 *</text>
+  <text class='table-header' x='450' y='470'>775,000</text>
+  <text class='table-header' x='580' y='470'>Interpolated</text>
+  <text class='table-header' x='720' y='470'>Estimated</text>
+  <rect x='360' y='475' width='610' height='20' fill='#FFF' stroke='#CCC' stroke-width='1'/>
+  <text class='state-content' x='375' y='490'>1850</text>
+  <text class='state-content' x='450' y='490'>1,053,262</text>
+  <text class='state-content' x='580' y='490'>Exact</text>
+  <text class='state-content' x='720' y='490'>Census</text>
+  <rect x='360' y='495' width='610' height='20' fill='#FFF' stroke='#CCC' stroke-width='1'/>
+  <text class='state-content' x='375' y='510'>1870</text>
+  <text class='state-content' x='450' y='510'>1,825,274</text>
+  <text class='state-content' x='580' y='510'>Exact</text>
+  <text class='state-content' x='720' y='510'>Census</text>
+  <rect x='360' y='515' width='610' height='20' fill='#FFF' stroke='#CCC' stroke-width='1'/>
+  <text class='state-content' x='375' y='530'>1890</text>
+  <text class='state-content' x='450' y='530'>2,270,515</text>
+  <text class='state-content' x='580' y='530'>Exact</text>
+  <text class='state-content' x='720' y='530'>Census</text>
+  <text class='table-header' x='375' y='565'>FRANCE - REGIONAL DATA</text>
+  <rect x='360' y='575' width='610' height='25' fill='#E0E0E0' stroke='#333' stroke-width='1'/>
+  <text class='table-header' x='375' y='595'>Year</text>
+  <text class='table-header' x='450' y='595'>Population</text>
+  <text class='table-header' x='580' y='595'>Certainty</text>
+  <text class='table-header' x='720' y='595'>Source</text>
+  <rect x='360' y='600' width='610' height='20' fill='#FFF' stroke='#CCC' stroke-width='1'/>
+  <text class='state-content' x='375' y='615'>1800</text>
+  <text class='state-content' x='450' y='615'>27,349,003</text>
+  <text class='state-content' x='580' y='615'>Exact</text>
+  <text class='state-content' x='720' y='615'>Census</text>
+  <rect x='360' y='620' width='610' height='20' fill='#FFFF99' stroke='#FF6B6B' stroke-width='2'/>
+  <text class='table-header' x='375' y='635'>1832 *</text>
+  <text class='table-header' x='450' y='635'>32,569,000</text>
+  <text class='table-header' x='580' y='635'>Interpolated</text>
+  <text class='table-header' x='720' y='635'>Estimated</text>
+  <text class='state-content' x='375' y='670'>* Asterisk indicates interpolated values (estimated from surrounding data)</text>
+  <rect x='450' y='700' width='120' height='30' fill='#4CAF50' stroke='#333' stroke-width='2' rx='4'/>
+  <text class='table-header' x='510' y='722' text-anchor='middle' fill='white'>Close</text>
+  <rect class='state-box state-card' x='1050' y='360' width='320' height='380' rx='8'/>
+  <text class='state-title' x='1210' y='390' text-anchor='middle'>User Interactions</text>
+  <text class='state-content' x='1060' y='420'>SCROLLING:</text>
+  <text class='state-content' x='1070' y='440'>• Scroll table vertically</text>
+  <text class='state-content' x='1070' y='460'>• View all years available</text>
+  <text class='state-content' x='1070' y='480'>• 1800-2020+ coverage</text>
+  <text class='state-content' x='1060' y='510'>HIGHLIGHTING:</text>
+  <text class='state-content' x='1070' y='530'>• 1832 row stays highlighted</text>
+  <text class='state-content' x='1070' y='550'>• (yellow background)</text>
+  <text class='state-content' x='1070' y='570'>• Shows original context</text>
+  <text class='state-content' x='1060' y='600'>HOVER TOOLTIPS:</text>
+  <text class='state-content' x='1070' y='620'>• Hover over row</text>
+  <text class='state-content' x='1070' y='640'>• Shows source citation</text>
+  <text class='state-content' x='1060' y='670'>CLOSE PANEL:</text>
+  <text class='state-content' x='1070' y='690'>• Click Close button</text>
+  <text class='state-content' x='1070' y='710'>• Press Escape key</text>
+</svg>

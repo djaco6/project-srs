@@ -1,0 +1,76 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1400' height='750' viewBox='0 0 1400 750'>
+  <defs>
+    <style>
+      .state-box { stroke: #333; stroke-width: 2; rx: 8; }
+      .state-map { fill: #FFE0B2; }
+      .state-selected { fill: #B3E5FC; }
+      .state-distance { fill: #C8E6C9; }
+      .arrow { fill: none; stroke: #333; stroke-width: 2.5; marker-end: url(#arrowhead); }
+      .arrow-label { font-family: Arial; font-size: 11px; fill: #333; font-weight: bold; }
+      .state-title { font-family: Arial; font-size: 14px; font-weight: bold; fill: #000; }
+      .state-content { font-family: Arial; font-size: 10px; fill: #333; }
+    </style>
+    <marker id='arrowhead' markerWidth='10' markerHeight='10' refX='9' refY='3' orient='auto'>
+      <polygon points='0 0, 10 3, 0 6' fill='#333' />
+    </marker>
+  </defs>
+  <rect class='state-box state-map' x='30' y='30' width='300' height='200' rx='8'/>
+  <text class='state-title' x='180' y='65' text-anchor='middle'>Map - Multiple Pins</text>
+  <circle cx='120' cy='140' r='6' fill='#FF6B6B'/>
+  <text class='state-content' x='130' y='145'>Paris</text>
+  <circle cx='220' cy='180' r='6' fill='#FF6B6B'/>
+  <text class='state-content' x='230' y='185'>Lyon</text>
+  <text class='state-content' x='40' y='210'>Both locations recognized</text>
+  <path class='arrow' d='M 330 130 Q 410 80 490 130'/>
+  <text class='arrow-label' x='360' y='70'>USER ACTION:</text>
+  <text class='arrow-label' x='360' y='88'>Click Paris pin</text>
+  <rect class='state-box state-selected' x='490' y='30' width='300' height='200' rx='8'/>
+  <text class='state-title' x='640' y='65' text-anchor='middle'>One Pin Selected</text>
+  <circle cx='580' cy='140' r='6' fill='#FFD700' stroke='#FF6B6B' stroke-width='2'/>
+  <text class='state-content' x='590' y='145'>Paris (selected)</text>
+  <circle cx='680' cy='180' r='6' fill='#CCCCCC'/>
+  <text class='state-content' x='690' y='185'>Lyon (inactive)</text>
+  <text class='state-content' x='500' y='210'>Sidebar hint: "Select a</text>
+  <text class='state-content' x='500' y='225'>second location"</text>
+  <path class='arrow' d='M 790 130 Q 870 80 950 130'/>
+  <text class='arrow-label' x='830' y='70'>USER ACTION:</text>
+  <text class='arrow-label' x='830' y='88'>Click Lyon pin</text>
+  <rect class='state-box state-distance' x='950' y='30' width='400' height='200' rx='8'/>
+  <text class='state-title' x='1150' y='65' text-anchor='middle'>Two Pins Selected - Distance Line</text>
+  <circle cx='1010' cy='140' r='6' fill='#FFD700' stroke='#FF6B6B' stroke-width='2'/>
+  <text class='state-content' x='1020' y='145'>Paris</text>
+  <circle cx='1130' cy='180' r='6' fill='#FFD700' stroke='#FF6B6B' stroke-width='2'/>
+  <text class='state-content' x='1140' y='185'>Lyon</text>
+  <line x1='1010' y1='140' x2='1130' y2='180' stroke='#FF6B6B' stroke-width='2' stroke-dasharray='5,5'/>
+  <text class='state-content' x='1050' y='165'>463 km / 288 mi</text>
+  <text class='state-content' x='960' y='210'>Straight-line distance</text>
+  <path class='arrow' d='M 650 280 Q 650 340 650 400'/>
+  <text class='arrow-label' x='580' y='340'>SYSTEM RESPONSE:</text>
+  <text class='arrow-label' x='580' y='358'>Calculate & display</text>
+  <text class='arrow-label' x='580' y='376'>travel times in sidebar</text>
+  <rect class='state-box state-distance' x='380' y='400' width='340' height='280' rx='8'/>
+  <text class='state-title' x='550' y='430' text-anchor='middle'>Sidebar - Travel Times</text>
+  <text class='state-content' x='390' y='460'>ROUTE: Paris ↔ Lyon</text>
+  <text class='state-content' x='390' y='480'>Distance: 463 km</text>
+  <text class='state-content' x='390' y='500'>Straight-line: 288 miles</text>
+  <text class='state-content' x='390' y='530'>TRAVEL TIME ESTIMATES:</text>
+  <text class='state-content' x='390' y='555'>ON FOOT:</text>
+  <text class='state-content' x='400' y='572'>~97 days (5 mph average)</text>
+  <text class='state-content' x='390' y='600'>HORSEBACK:</text>
+  <text class='state-content' x='400' y='617'>~14 days (33 mph average)</text>
+  <text class='state-content' x='390' y='645'>CART/CARRIAGE:</text>
+  <text class='state-content' x='400' y='662'>~21 days (22 mph average)</text>
+  <rect class='state-box state-map' x='780' y='400' width='340' height='280' rx='8'/>
+  <text class='state-title' x='950' y='430' text-anchor='middle'>Deselect/Reset Options</text>
+  <text class='state-content' x='790' y='460'>USER ACTION: Click selected pin</text>
+  <text class='state-content' x='790' y='480'>→ Deselect it</text>
+  <text class='state-content' x='790' y='510'>OR: Click any unselected pin</text>
+  <text class='state-content' x='790' y='530'>→ Replace one selection</text>
+  <text class='state-content' x='790' y='560'>OR: Click "Clear Selection"</text>
+  <text class='state-content' x='790' y='580'>button in sidebar</text>
+  <text class='state-content' x='790' y='610'>RESULT:</text>
+  <text class='state-content' x='800' y='630'>• Distance line disappears</text>
+  <text class='state-content' x='800' y='650'>• Map returns to normal state</text>
+  <path class='arrow' d='M 850 560 Q 750 300 1150 230'/>
+  <path class='arrow' d='M 550 680 Q 550 340 950 230'/>
+</svg>
